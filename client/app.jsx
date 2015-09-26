@@ -2,9 +2,13 @@ App = React.createClass({
   mixins: [ReactMeteorData],
 
   getMeteorData() {
+    let notificationCount
+    if (Meteor.user()) {
+      notificationCount = Notifications.find({read: false, forUser: Meteor.user().username}).count() 
+    }
     return {
       currentUser: Meteor.user(),
-      unreadNotifications: Notifications.find({read: false, forUser: Meteor.user().username}).count()
+      unreadNotifications: notificationCount
     }
   },
 
