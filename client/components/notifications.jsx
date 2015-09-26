@@ -1,4 +1,4 @@
-Calendar = React.createClass({
+Notifications = React.createClass({
   render() {
     return (
       <p> lorem ipsum notifications</p>

@@ -2,7 +2,8 @@ FlowRouter.route('/', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Medi',
-            content: <p>Hey</p>
+            content: <p>Hey</p>,
+            options: []
         })
     }
 })
@@ -30,7 +31,8 @@ FlowRouter.route('/mediators', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Mediadores',
-            content: <Mediators />
+            content: <Mediators />,
+            options: []
         })
     }
 })
@@ -39,7 +41,8 @@ FlowRouter.route('/cases', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Mis casos',
-            content: <Cases />
+            content: <Cases />,
+            options: []
         })
     }
 })
@@ -48,7 +51,8 @@ FlowRouter.route('/notifications', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Notificaciones',
-            content: <Notifications />
+            content: <Notifications />,
+            options: []
         })
     }
 })
