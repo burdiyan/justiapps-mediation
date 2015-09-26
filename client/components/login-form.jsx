@@ -1,6 +1,6 @@
 LoginForm = React.createClass({
   componentDidMount() {
-    $('input[name=username]').focus()
+    //$('input[name=username]').focus()
   },
   getInitialState() {
     return {
@@ -40,7 +40,7 @@ LoginForm = React.createClass({
             MEDI
           </div>
           <div className="branding-subtitle">
-            Inicia Sesión
+            Iniciar Sesión
           </div>
         </div>
         {this._renderErrors()}
