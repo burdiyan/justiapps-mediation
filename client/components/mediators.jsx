@@ -5,7 +5,8 @@ Mediators = React.createClass({
         <div className="mediator-item">
           <div className="row">
             <div className="col-sm-3 mediator-thumb">
-              <i className="bi_user-single-round"></i>
+              <div className="mediator-thumb-inner">
+              </div>
             </div>
             <div className="col-sm-9 mediator-content">
               <div className="mediator-name">

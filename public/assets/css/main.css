@@ -15787,9 +15787,15 @@ html, body {
   .mediator-container .mediator-item .row {
     margin: 0px;
     padding: 0px; }
-    .mediator-container .mediator-item .row .mediator-thumb {
-      font-size: 60px;
-      color: #3498DB; }
+    .mediator-container .mediator-item .row .mediator-thumb-inner {
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background: url("http://lorempixel.com/100/100/people");
+      color: #3498DB;
+      border: 3px solid #3498DB;
+      border-radius: 50px;
+      width: 100px;
+      height: 100px; }
     .mediator-container .mediator-item .row .mediator-content .mediator-name {
       font-size: 18px;
       color: #154360;
