@@ -15510,7 +15510,8 @@ html, body {
   font-weight: 400;
   margin: 0px;
   padding: 0px;
-  border: none; }
+  border: none;
+  overflow-x: hidden; }
 
 #main-container {
   margin: 0px;
@@ -15531,7 +15532,7 @@ html, body {
       height: 100px; }
       #main-container #panel-left .panel-header #close-menu-button {
         position: absolute;
-        top: 15px;
+        top: 30px;
         right: 15px;
         cursor: pointer; }
         @media (min-width: 768px) {
@@ -15578,7 +15579,7 @@ html, body {
       color: #154360;
       font-size: 24px;
       line-height: 30px;
-      margin-top: 10px;
+      margin-top: 20px;
       margin-left: 10px;
       cursor: pointer; }
       @media (min-width: 768px) {
@@ -15587,16 +15588,36 @@ html, body {
     #main-container #panel-main .panel-titlebar-up {
       width: 100%;
       top: 0px;
-      height: 50px;
+      height: 70px;
       line-height: 20px;
       font-size: 18px;
-      padding: 15px;
+      padding: 25px;
       text-align: center;
       background-color: #F7F9F9;
       color: #154360;
       text-transform: uppercase;
       border-bottom: 1px solid #CCCCCC;
       font-weight: 700; }
+    #main-container #panel-main .panel-titlebar-down {
+      width: 100%;
+      top: 0px;
+      height: 30px;
+      line-height: 20px;
+      font-size: 14px;
+      padding: 0px 15px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid #CCCCCC;
+      color: #444444; }
+      #main-container #panel-main .panel-titlebar-down a {
+        padding: 5px 15px;
+        display: inline-block; }
+        #main-container #panel-main .panel-titlebar-down a:link, #main-container #panel-main .panel-titlebar-down a:visited {
+          color: #154360;
+          text-decoration: none; }
+        #main-container #panel-main .panel-titlebar-down a:hover, #main-container #panel-main .panel-titlebar-down a:active {
+          color: #3498DB;
+          text-decoration: none; }
     #main-container #panel-main .panel-content {
       padding: 15px; }
   @media (max-width: 767px) {
