@@ -4,6 +4,9 @@ App = React.createClass({
       <div className="container-fluid" id="main-container">
         <div id="panel-left">
           <div className="panel-header">
+            <div className="close-menu-button">
+              <i className="bi_interface-cross"></i>
+            </div>
           </div>
           <div className="menu-item">
             <div className="menu-icon">

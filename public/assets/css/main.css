@@ -15529,12 +15529,21 @@ html, body {
     #main-container #panel-left .panel-header {
       width: 100%;
       height: 100px; }
+      #main-container #panel-left .panel-header .close-menu-button {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer; }
+        @media (min-width: 768px) {
+          #main-container #panel-left .panel-header .close-menu-button {
+            display: none; } }
     #main-container #panel-left .menu-item {
       width: 100%;
       height: 50px;
       padding: 15px 5px 15px 15px;
       font-size: 18px;
-      border-top: 1px solid #b6daf2; }
+      border-top: 1px solid #b6daf2;
+      cursor: pointer; }
       #main-container #panel-left .menu-item .menu-icon {
         display: inline-block;
         float: left;
@@ -15551,6 +15560,8 @@ html, body {
         width: 30px; }
         #main-container #panel-left .menu-item .menu-arrow i {
           line-height: 20px; }
+      #main-container #panel-left .menu-item:hover {
+        background-color: #124364; }
       #main-container #panel-left .menu-item.menu-bottom {
         position: absolute;
         left: 0px;
