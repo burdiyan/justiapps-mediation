@@ -17,7 +17,7 @@ FlowRouter.route('/', {
                 options: []
             })
         }
-        
+
         ReactLayout.render(App, {
             title: 'Medi',
             content: <p>Hey</p>,
@@ -45,7 +45,7 @@ protectedRoutes.route('/calendar', {
     }
 })
 
-FlowRouter.route('/mediators', {
+protectedRoutes.route('/mediators', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Mediadores',
@@ -55,7 +55,7 @@ FlowRouter.route('/mediators', {
     }
 })
 
-FlowRouter.route('/cases', {
+protectedRoutes.route('/cases', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Mis casos',
@@ -65,7 +65,7 @@ FlowRouter.route('/cases', {
     }
 })
 
-FlowRouter.route('/notifications', {
+protectedRoutes.route('/notifications', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Notificaciones',
@@ -84,7 +84,7 @@ FlowRouter.route('/notifications', {
     }
 })
 
-FlowRouter.route('/notifications/unread', {
+protectedRoutes.route('/notifications/unread', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Notificaciones',
@@ -142,7 +142,7 @@ FlowRouter.route('/about/mediation', {
     }
 })
 
-FlowRouter.route('/profile', {
+protectedRoutes.route('/profile', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Mi Perfil',
