@@ -13,6 +13,7 @@ App = React.createClass({
               Calendario
             </div>
             <div className="menu-arrow">
+              <i className="bi_interface-right"></i>
             </div>
           </div>
           <div className="menu-item">
@@ -23,6 +24,7 @@ App = React.createClass({
               Mediadores
             </div>
             <div className="menu-arrow">
+              <i className="bi_interface-right"></i>
             </div>
           </div>
           <div className="menu-item">
@@ -33,6 +35,7 @@ App = React.createClass({
               Mis Casos
             </div>
             <div className="menu-arrow">
+              <i className="bi_interface-right"></i>
             </div>
           </div>
           <div className="menu-item">
@@ -43,6 +46,7 @@ App = React.createClass({
               Notificaciones
             </div>
             <div className="menu-arrow">
+              <i className="bi_interface-right"></i>
             </div>
           </div>
           <div className="menu-item line-bottom">
@@ -53,6 +57,7 @@ App = React.createClass({
               Acerca de
             </div>
             <div className="menu-arrow">
+              <i className="bi_interface-right"></i>
             </div>
           </div>
           <div className="menu-item menu-bottom">
@@ -63,10 +68,13 @@ App = React.createClass({
               Perfil
             </div>
             <div className="menu-arrow">
+              <i className="bi_interface-right"></i>
             </div>
           </div>
         </div>
         <div id="panel-main">
+          <div id="panel-titlebar-up">
+          </div>
         </div>
       </div>
     )
