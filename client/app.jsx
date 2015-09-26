@@ -11,7 +11,8 @@ App = React.createClass({
     if (!option) {
       return 
     }
-    return <a key={option+index} href={option.route}>{option.text}</a>
+    return <a key={option+index} 
+    href={option.route}>{option.text}</a>
   },
 
   render() {

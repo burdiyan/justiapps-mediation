@@ -52,19 +52,36 @@ FlowRouter.route('/notifications', {
         ReactLayout.render(App, {
             title: 'Notificaciones',
             content: <Notifications />,
-            options: []
+            options: [
+                {
+                    route: '',
+                    text: 'Hoy'
+                },
+                {
+                    route: '/notifications/all',
+                    text: 'Todo'
+                }
+            ]
         })
     }
 })
 
 FlowRouter.route('/about', {
     action(params) {
-        console.log('about')
+        ReactLayout.render(App, {
+            title: 'Acerca de',
+            content: <About />,
+            options: []
+        })
     }
 })
 
 FlowRouter.route('/profile', {
     action(params) {
-        console.log('profile')
+        ReactLayout.render(App, {
+            title: 'Mi Perfil',
+            content: <Profile />,
+            options: []
+        })
     }
 })
