@@ -1,12 +1,17 @@
 FlowRouter.route('/', {
     action(params) {
-        React.render(<App />, document.getElementById("render-target"))
+        ReactLayout.render(App, {
+            content: <p>Hey</p>
+        })
     }
 })
 
 FlowRouter.route('/calendar', {
     action(params) {
-        console.log('calendar')
+        ReactLayout.render(App, {
+            content: <Calendar />,
+            title: 'Calendario'
+        })
     }
 })
 
