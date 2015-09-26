@@ -218,6 +218,19 @@ html, body{
       -webkit-appearance: none;
     }
   }
+  .profile-actions{
+    border-top: 1px solid $lineGray;
+    .profile-action{
+      height: 50px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 15px 0px;
+      border-bottom: 1px solid $lineGray;
+      cursor: pointer;
+      text-align: left;
+    }
+  }
 }
 
 .notification-container{

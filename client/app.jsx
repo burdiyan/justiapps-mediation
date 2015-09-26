@@ -97,9 +97,9 @@ App = React.createClass({
                     bottom="line-bottom"
                     permissions={[]} />
           
-          <MenuItem name="Perfil" 
-                    route="/profile" 
-                    icon="bi_setting-gear-a" 
+          <MenuItem name="Logout" 
+                    route="/logout" 
+                    icon="bi_interface-logout-a" 
                     bottom="menu-bottom"
                     permissions={['admin', 'judge', 'mediator', 'customer']} />
         </div>

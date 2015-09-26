@@ -83,8 +83,8 @@ protectedRoutes.route('/notifications/unread', {
 FlowRouter.route('/', {
     action(params) {
         ReactLayout.render(App, {
-            title: 'Medi',
-            content: <p>Hey</p>
+            title: 'Bienvenidos',
+            content: <Welcome />
         })
     }
 })

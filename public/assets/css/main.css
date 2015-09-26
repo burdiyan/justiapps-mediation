@@ -15677,6 +15677,21 @@ html, body {
     .container-content-small .branding .branding-subtitle {
       font-size: 18px;
       font-weight: 700; }
+  .container-content-small form input[type=text] {
+    width: 100%;
+    height: 36px;
+    -webkit-appearance: none; }
+  .container-content-small .profile-actions {
+    border-top: 1px solid #CCCCCC; }
+    .container-content-small .profile-actions .profile-action {
+      height: 50px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 15px 0px;
+      border-bottom: 1px solid #CCCCCC;
+      cursor: pointer;
+      text-align: left; }
 
 .notification-container .notification {
   padding: 15px;
