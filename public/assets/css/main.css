@@ -15542,7 +15542,7 @@ html, body {
       height: 50px;
       padding: 15px 5px 15px 15px;
       font-size: 18px;
-      border-top: 1px solid #b6daf2;
+      border-top: 1px solid #D6EAF8;
       cursor: pointer; }
       #main-container #panel-left .menu-item .menu-icon {
         display: inline-block;
@@ -15561,13 +15561,13 @@ html, body {
         #main-container #panel-left .menu-item .menu-arrow i {
           line-height: 20px; }
       #main-container #panel-left .menu-item:hover {
-        background-color: #124364; }
+        background-color: #154360; }
       #main-container #panel-left .menu-item.menu-bottom {
         position: absolute;
         left: 0px;
         bottom: 0px; }
       #main-container #panel-left .menu-item.line-bottom {
-        border-bottom: 1px solid #b6daf2; }
+        border-bottom: 1px solid #D6EAF8; }
   #main-container #panel-main {
     background-color: #FFFFFF;
     color: #444444;
@@ -15575,15 +15575,28 @@ html, body {
     #main-container #panel-main #hamburger-menu-button {
       position: fixed;
       z-index: 900;
-      color: #124364;
+      color: #154360;
       font-size: 24px;
       line-height: 30px;
       margin-top: 10px;
       margin-left: 10px;
       cursor: pointer; }
-    @media (min-width: 768px) {
-      #main-container #panel-main {
-        display: none; } }
+      @media (min-width: 768px) {
+        #main-container #panel-main #hamburger-menu-button {
+          display: none; } }
+    #main-container #panel-main .panel-titlebar-up {
+      width: 100%;
+      top: 0px;
+      height: 50px;
+      line-height: 20px;
+      font-size: 18px;
+      padding: 15px;
+      text-align: center;
+      background-color: #F7F9F9;
+      color: #154360;
+      text-transform: uppercase;
+      border-bottom: 1px solid #CCCCCC;
+      font-weight: 700; }
   @media (max-width: 767px) {
     #main-container #panel-left {
       width: 75%;

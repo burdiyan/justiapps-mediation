@@ -92,9 +92,23 @@ html, body{
       margin-top: 10px;
       margin-left: 10px;
       cursor: pointer;
+      @media(min-width: 768px){
+        display: none;
+      }
     }
-    @media(min-width: 768px){
-      display: none;
+    .panel-titlebar-up{
+      width: 100%;
+      top: 0px;
+      height: 50px;
+      line-height: 20px;
+      font-size: 18px;
+      padding: 15px;
+      text-align: center;
+      background-color: $bgGray;
+      color: $brandingDark;
+      text-transform: uppercase;
+      border-bottom: 1px solid $lineGray;
+      font-weight: 700;
     }
   }
   @media(max-width: 767px){

@@ -79,8 +79,12 @@ App = React.createClass({
           <div id="hamburger-menu-button">
             <i className="bi_interface-hamburger"></i>
           </div>
-          <div id="panel-titlebar-up">{this.props.title}</div>
-          {this.props.content}
+          <div className="content-container">
+            <div className="panel-titlebar-up">
+              {this.props.title}
+            </div>
+            {this.props.content}
+          </div>
         </div>
       </div>
     )

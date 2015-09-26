@@ -1,7 +1,7 @@
 Calendar = React.createClass({
-    render() {
-        return (
-            <h1>Calendar</h1>
-        )
-    }
+  render() {
+    return (
+      <p> lorem ipsum </p>
+    )
+  }
 })  
