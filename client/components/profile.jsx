@@ -1,7 +1,8 @@
 Profile = React.createClass({
   render() {
     return (
-      <p> lorem ipsum profile </p>
+      <div className="profile-container container-content-small">
+      </div>
     )
   }
 })  
