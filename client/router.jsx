@@ -11,7 +11,17 @@ FlowRouter.route('/calendar', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Calendario',
-            content: <Calendar />
+            content: <Calendar />,
+            options: [
+                {
+                    route: '/calendar/foo', 
+                    text: 'foo'
+                },
+                {
+                    route: '/calendar/bar',
+                    text: 'bar'
+                }
+            ]
         })
     }
 })
