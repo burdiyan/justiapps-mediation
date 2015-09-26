@@ -1,4 +1,32 @@
 LoginForm = React.createClass({
+    // mixins: [ReactMeteorData],
+    getInitialState() {
+        return {
+            username: '',
+            password: '',
+            failed: false
+        }
+    },
+    setUsername(event) {
+        this.setState({username: event.target.value})
+    },
+    setPassword(event) {
+        this.setState({password: event.target.value})
+    },
+    handleSubmit(event) {
+        event.preventDefault()
+        Meteor.loginWithPassword(this.state.username, this.state.password, (err) => {
+            if (err) {
+                this.setState({failed: true})
+            }
+        })
+    },
+    _renderErrors() {
+        if (this.state.failed) {
+            return <p>ERROR</p>
+        }
+        return null
+    },
     render() {
         return (
           <div className="container-content-small">
@@ -13,10 +41,11 @@ LoginForm = React.createClass({
                 Inicia Sesión
               </div>
             </div>
-            <form>
-              <input type="text" name="username" placeholder="Username" />
-              <input type="password" name="password" placeholder="Password" />
-              <button>Enviar</button>
+            {this._renderErrors()}
+            <form onSubmit={this.handleSubmit}>
+              <input type="text" name="username" placeholder="Username" onChange={this.setUsername} value={this.state.username}/>
+              <input type="password" name="password" placeholder="Password" onChange={this.setPassword} value={this.state.password}/>
+              <button type="submit">Enviar</button>
             </form>
           </div>
         )
