@@ -7,6 +7,9 @@ App = React.createClass({
             <div id="close-menu-button">
               <i className="bi_interface-cross"></i>
             </div>
+            <div id="branding">
+              <div id="branding-icon"></div>
+            </div>
           </div>
           <div className="menu-item">
             <div className="menu-icon">
@@ -83,7 +86,9 @@ App = React.createClass({
             <div className="panel-titlebar-up">
               {this.props.title}
             </div>
-            {this.props.content}
+            <div className="panel-content">
+              {this.props.content}
+            </div>
           </div>
         </div>
       </div>

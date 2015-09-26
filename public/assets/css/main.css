@@ -15597,6 +15597,8 @@ html, body {
       text-transform: uppercase;
       border-bottom: 1px solid #CCCCCC;
       font-weight: 700; }
+    #main-container #panel-main .panel-content {
+      padding: 15px; }
   @media (max-width: 767px) {
     #main-container #panel-left {
       width: 75%;

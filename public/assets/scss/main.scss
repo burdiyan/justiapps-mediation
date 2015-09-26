@@ -110,6 +110,9 @@ html, body{
       border-bottom: 1px solid $lineGray;
       font-weight: 700;
     }
+    .panel-content{
+      padding: 15px;
+    }
   }
   @media(max-width: 767px){
     #panel-left{
