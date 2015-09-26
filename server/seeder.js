@@ -55,8 +55,8 @@ Meteor.startup(function() {
         password: '123456',
         profile: {
             title: 'mediator',
-            firstName: '',
-            lastName: '',
+            firstName: 'Jose',
+            lastName: 'Pérez García',
             association: 'Asociacion 1',
             association_number: 'ASOC-123456',
             specialization: ['Civil', 'Matrimonial', 'Consumidor'],

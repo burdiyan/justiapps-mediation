@@ -2,7 +2,7 @@ Calendar = React.createClass({
   mixins: [ReactMeteorData],
   getMeteorData() {
     return {
-        calendarEvents: Meteor.call('getCalendarEventsForUser')
+        calendarEvents: CalendarEvents.find().fetch()
     }
   },
   componentDidMount() {
