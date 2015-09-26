@@ -1,4 +1,4 @@
-Notifications = React.createClass({
+NotificationsAll = React.createClass({
   getInitialState() {
     return {
       notifications: [
@@ -29,6 +29,14 @@ Notifications = React.createClass({
         {
           text: 'El Juzgado de 1ª Instancia nº 2 de Granada ha enviado notificación al mediador Santiago Martínez para CONCERTAR CITA INFORMATIVA DE MEDIACIÓN, acordada en el Procedimiento de Separación de Mutuo Acuerdo 511/2015 de María de la Villa y José Sanchez García.',
           status: 'read'
+        },
+        {
+          text: 'El Juzgado de 1ª Instancia nº 2 de Granada ha enviado notificación al mediador Ernesto San Juan para CONCERTAR CITA INFORMATIVA DE MEDIACIÓN, acordada en el Procedimiento de Separación de Mutuo Acuerdo 489/2015 de Leticia García García y Lucas Rodríguez Martín.',
+          status: 'unread'
+        },
+        {
+          text: 'El Juzgado de 1ª Instancia nº 2 de Madrid ha enviado notificación al mediador Rodrigo García COMUNICANDO FIN DEL PLAZO PARA CONCLUIR LA MEDIACIÓN Y SOLICITANDO INFORMACIÓN SOBRE SU RESULTADO.',
+          status: 'unread'
         }
       ]
     }

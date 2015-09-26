@@ -51,20 +51,40 @@ FlowRouter.route('/notifications', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Notificaciones',
-            content: <Notifications />,
+            content: <NotificationsAll />,
             options: [
                 {
-                    route: '',
-                    text: 'Hoy'
+                    route: '/notifications',
+                    text: 'Todo'
                 },
                 {
-                    route: '/notifications/all',
-                    text: 'Todo'
+                    route: '/notifications/unread',
+                    text: 'No leído'
                 }
             ]
         })
     }
 })
+
+FlowRouter.route('/notifications/unread', {
+    action(params) {
+        ReactLayout.render(App, {
+            title: 'Notificaciones',
+            content: <NotificationsUnread />,
+            options: [
+                {
+                    route: '/notifications',
+                    text: 'Todo'
+                },
+                {
+                    route: '/notifications/unread',
+                    text: 'No leído'
+                }
+            ]
+        })
+    }
+})
+
 
 FlowRouter.route('/about', {
     action(params) {
