@@ -7,13 +7,7 @@ Calendar = React.createClass({
   },
   componentDidMount() {
     $('#full-calendar').fullCalendar({
-      events: [
-        {
-          title: 'Sesión con el cliente 1',
-          start: '2015-09-26T16:15:40Z',
-          end: '2015-09-26T18:15:40Z'
-        }
-      ]
+      events: this.data.calendarEvents
     })
   },
   render() {
