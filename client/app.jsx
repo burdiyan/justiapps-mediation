@@ -8,12 +8,12 @@ App = React.createClass({
               <i className="bi_interface-cross"></i>
             </div>
           </div>
-          <div className="menu-item">
+          <div className="menu-item" onClick={FlowRouter.go('/calendar')}>
             <div className="menu-icon">
               <i className="bi_time-calendar-a"></i>
             </div>
             <div className="menu-text">
-              <a href="/calendar">Calendario</a>
+              Calendario
             </div>
             <div className="menu-arrow">
               <i className="bi_interface-right"></i>
