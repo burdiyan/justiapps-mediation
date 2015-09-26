@@ -4,11 +4,14 @@ NotificationsList = React.createClass({
   getMeteorData() {
     if (this.props.unread) {
       return {
-        notifications: Notifications.find({read: false}).fetch()
+        notifications: Notifications.find({
+          read: false,
+          forUser: Meteor.user().username
+        }).fetch()
       }  
     }
     return {
-      notifications: Notifications.find({}).fetch()
+      notifications: Notifications.find({forUser: Meteor.user().username}).fetch()
     }
   },
 

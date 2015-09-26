@@ -4,7 +4,7 @@ App = React.createClass({
   getMeteorData() {
     return {
       currentUser: Meteor.user(),
-      unreadNotifications: Notifications.find({read: false}).count()
+      unreadNotifications: Notifications.find({read: false, forUser: Meteor.user().username}).count()
     }
   },
 
