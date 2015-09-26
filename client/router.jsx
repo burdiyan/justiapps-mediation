@@ -12,7 +12,16 @@ protectedRoutes.route('/mediators', {
         ReactLayout.render(App, {
             title: 'Mediadores',
             content: <Mediators />,
-            options: []
+            options: [
+                {
+                    route: '/mediators',
+                    text: 'Mediadores'
+                },
+                {
+                    route: '/mediators',
+                    text: 'Búsqueda'
+                }
+            ]
         })
     }
 })

@@ -334,6 +334,39 @@ html, body{
   }
 }
 
+.mediator-container{
+  .mediator-item{
+    width: 100%;
+    border: 1px solid $lineGray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+    @media(max-width: 767px){
+      text-align: center;
+    }
+    .row{
+      margin: 0px;
+      padding: 0px; 
+      .mediator-thumb{
+        font-size: 60px;
+        color: $branding;
+      }
+      .mediator-content{
+        .mediator-name{
+          font-size: 18px;
+          color: $brandingDark;
+          margin-bottom: 5px;
+          font-weight: 700;
+        }
+        i{
+          width: 30px;
+          margin-right: 5px;
+        }
+      }
+    }
+  } 
+}
+
 .warning{
   color: $warning;
 }
