@@ -47,7 +47,7 @@ App = React.createClass({
           <MenuItem name="Mediadores" route="/mediators" icon="bi_user-single-a-group" />
           <MenuItem name="Mis casos" route="/cases" icon="bi_user-contact-book" />
           <MenuItem name="Notificaciones" route="/notifications" icon="bi_setting-notification" />
-          <MenuItem name="Acerca de" route="/about" icon="bi_doc-file-line-a" />
+          <MenuItem name="Acerca de" route="/about" icon="bi_doc-file-line-a" bottom="line-bottom" />
           <MenuItem name="Perfil" route="/profile" icon="bi_setting-gear-a" bottom="menu-bottom" />
         </div>
 
