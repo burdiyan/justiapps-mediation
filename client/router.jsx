@@ -85,15 +85,13 @@ FlowRouter.route('/', {
         if (!Meteor.userId()) {
             return ReactLayout.render(App, {
                 title: 'Inicia sesión',
-                content: <LoginForm />,
-                options: []
+                content: <LoginForm />
             })
         }
 
         ReactLayout.render(App, {
             title: 'Medi',
-            content: <p>Hey</p>,
-            options: []
+            content: <p>Hey</p>
         })
     }
 })
@@ -141,7 +139,6 @@ protectedRoutes.route('/profile', {
         ReactLayout.render(App, {
             title: 'Mi Perfil',
             content: <Profile />,
-            options: []
         })
     }
 })

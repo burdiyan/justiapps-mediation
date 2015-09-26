@@ -15,6 +15,17 @@ App = React.createClass({
     href={option.route}>{option.text}</a>
   },
 
+  _renderOptions() {
+    if (!this.props.options) {
+      return null
+    }
+    return (
+      <div className="panel-titlebar-down">
+        {this.props.options.map(this._renderOption)}
+      </div>
+    )
+  },
+
   openHamburgerMenu() {
     $("#panel-left").addClass('mobile');
     $("#panel-left").stop().velocity({marginLeft: 0});
@@ -84,9 +95,7 @@ App = React.createClass({
             <div className="panel-titlebar-up">
               {this.props.title}
             </div>
-            <div className="panel-titlebar-down">
-              {this.props.options.map(this._renderOption)}
-            </div>
+            {this._renderOptions()}
             <div className="panel-content">
               {this.props.content}
             </div>
