@@ -4,11 +4,11 @@ App = React.createClass({
       <div className="container-fluid" id="main-container">
         <div id="panel-left">
           <div className="panel-header">
-            <div className="close-menu-button">
+            <div id="close-menu-button">
               <i className="bi_interface-cross"></i>
             </div>
           </div>
-          <div className="menu-item" onClick={FlowRouter.go('/calendar')}>
+          <div className="menu-item">
             <div className="menu-icon">
               <i className="bi_time-calendar-a"></i>
             </div>
@@ -76,6 +76,9 @@ App = React.createClass({
           </div>
         </div>
         <div id="panel-main">
+          <div id="hamburger-menu-button">
+            <i className="bi_interface-hamburger"></i>
+          </div>
           <div id="panel-titlebar-up">{this.props.title}</div>
           {this.props.content}
         </div>
