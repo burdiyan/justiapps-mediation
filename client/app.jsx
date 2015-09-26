@@ -1,37 +1,10 @@
 App = React.createClass({
-  // CHAPUZA MODE ON
-  openCalendar() {
-    FlowRouter.go('/calendar')
-  },
-  openMediators() {
-    FlowRouter.go('/mediators')
-  },
-  openCases() {
-    FlowRouter.go('/cases')
-  },
-  openNotifications() {
-    FlowRouter.go('/notifications')
-  },
-  openAbout() {
-    FlowRouter.go('/about')
-  },
-  openProfile() {
-    FlowRouter.go('/profile')
-  },
-  // CHAPUZA MODE OFF
+  mixins: [ReactMeteorData],
 
-  componentDidMount() {
-    console.log('Hey THERE')
-  },
-
-  openHamburgerMenu() {
-    $("#panel-left").addClass('mobile');
-    $("#panel-left").stop().velocity({marginLeft: 0});
-  },
-
-  closeHamburgerMenu() {
-    $("#panel-left").removeClass('mobile');
-    $("#panel-left").stop().velocity("reverse");
+  getMeteorData() {
+    return {
+      currentUser: Meteor.user()
+    }
   },
 
   render() {
@@ -145,5 +118,36 @@ App = React.createClass({
         </div>
       </div>
     )
+  },
+
+  // CHAPUZA MODE ON
+  openCalendar() {
+    FlowRouter.go('/calendar')
+  },
+  openMediators() {
+    FlowRouter.go('/mediators')
+  },
+  openCases() {
+    FlowRouter.go('/cases')
+  },
+  openNotifications() {
+    FlowRouter.go('/notifications')
+  },
+  openAbout() {
+    FlowRouter.go('/about')
+  },
+  openProfile() {
+    FlowRouter.go('/profile')
+  },
+  // CHAPUZA MODE OFF
+
+  openHamburgerMenu() {
+    $("#panel-left").addClass('mobile');
+    $("#panel-left").stop().velocity({marginLeft: 0});
+  },
+
+  closeHamburgerMenu() {
+    $("#panel-left").removeClass('mobile');
+    $("#panel-left").stop().velocity("reverse");
   }
 });
