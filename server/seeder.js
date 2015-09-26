@@ -10,7 +10,8 @@ Meteor.startup(function() {
         profile: {
             title: 'admin',
             firstName: 'Alexandr',
-            lastName: 'Burdiyan'
+            lastName: 'Burdiyan',
+            avatar: 'http://api.adorable.io/avatars/285/judge2@med.com',
         }
     })
 
@@ -24,6 +25,7 @@ Meteor.startup(function() {
             firstName: 'Sergio',
             lastName: 'Garcia',
             tribunal: 'Juzgado 1',
+            avatar: 'http://api.adorable.io/avatars/285/judge2@mediatn.com',
             address: {
                 city: 'Madrid',
                 postalCode: '28000',
@@ -40,6 +42,7 @@ Meteor.startup(function() {
             firstName: 'Inmaculada',
             lastName: 'Fernández',
             tribunal: 'Juzgado 1',
+            avatar: 'http://api.adorable.io/avatars/285/judge2@mediation.com',
             address: {
                 city: 'Madrid',
                 postalCode: '28000',
@@ -61,6 +64,7 @@ Meteor.startup(function() {
             association: 'AMEFA Granada',
             association_number: '6523',
             specialization: ['Mediación familiar'],
+            avatar: 'http://api.adorable.io/avatars/285/judge2@medicom',
             address: {
                 city: 'Granada',
                 postalCode: '28001',
@@ -80,6 +84,7 @@ Meteor.startup(function() {
             association: 'AMEFA Granada',
             association_number: '10723',
             specialization: ['Mediación asuntos mercantiles'],
+            avatar: 'http://api.adorable.io/avatars/285/judge2@mediatm',
             address: {
                 city: 'Granada',
                 postalCode: '28001',
@@ -99,6 +104,7 @@ Meteor.startup(function() {
             association: 'Asprima',
             association_number: '15920',
             specialization: ['Mediación familiar'],
+            avatar: 'http://api.adorable.io/avatars/285/judge2ation.com',
             address: {
                 city: 'Madrid',
                 postalCode: '28001',
@@ -116,6 +122,7 @@ Meteor.startup(function() {
             title: 'customer',
             firstName: 'Guillem',
             lastName: 'Llull',
+            avatar: 'http://api.adorable.io/avatars/285/judgmediation.com',
             address: {
                 city: 'Madrid',
                 postalCode: '28004',
@@ -131,6 +138,7 @@ Meteor.startup(function() {
             title: 'customer',
             firstName: 'Mariana',
             lastName: 'Garcia Pérez',
+            avatar: 'http://api.adorable.io/avatars/285/ju@mediation.com',
             address: {
                 city: 'Madrid',
                 postalCode: '28000',

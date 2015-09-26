@@ -1,11 +1,10 @@
-Mediator = React.createClass({
+MediatorCard = React.createClass({
   render() {
     return (
       <div className="mediator-item">
         <div className="row">
           <div className="col-sm-3 mediator-thumb">
-            <div className="mediator-thumb-inner">
-            </div>
+            <img src={this.props.avatar} className="mediator-thumb-inner"></img>
           </div>
           <div className="col-sm-9 mediator-content">
             <div className="mediator-name">
@@ -37,26 +36,3 @@ Mediator = React.createClass({
     )  
   }
 })
-
-Mediators = React.createClass({
-  mixins: [ReactMeteorData],
-  getMeteorData() {
-    return {
-      mediators: Meteor.users.find({'profile.title': 'mediator'}).fetch()
-    }
-  },
-  _renderMediator(data) {
-    return <Mediator name={data.profile.firstName + ' ' + data.profile.lastName} 
-                     association={data.profile.association} 
-                     specialization={data.profile.specialization}
-                     address={data.profile.address}
-                     phone={data.profile.phone}/>
-  },
-  render() {
-    return (
-      <div className="mediator-container container-content">
-        {this.data.mediators.map(this._renderMediator)}
-      </div>
-    )
-  }
-})  
