@@ -10,6 +10,14 @@ var protectedRoutes = FlowRouter.group({
 
 FlowRouter.route('/', {
     action(params) {
+        if (!Meteor.userId()) {
+            return ReactLayout.render(App, {
+                title: 'Inicia sesión',
+                content: <LoginForm />,
+                options: []
+            })
+        }
+        
         ReactLayout.render(App, {
             title: 'Medi',
             content: <p>Hey</p>,
