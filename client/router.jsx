@@ -9,14 +9,42 @@ FlowRouter.route('/', {
 FlowRouter.route('/calendar', {
     action(params) {
         ReactLayout.render(App, {
-            content: <Calendar />,
-            title: 'Calendario'
+            title: 'Calendario',
+            content: <Calendar />
         })
     }
 })
 
 FlowRouter.route('/mediators', {
     action(params) {
-        console.log('mediators')
+        ReactLayout.render(App, {
+            title: 'Mediadores'
+        })
+    }
+})
+
+FlowRouter.route('/cases', {
+    action(params) {
+        ReactLayout.render(App, {
+            title: 'Mis casos'
+        })
+    }
+})
+
+FlowRouter.route('/notifications', {
+    action(params) {
+        console.log('notifications')
+    }
+})
+
+FlowRouter.route('/about', {
+    action(params) {
+        console.log('about')
+    }
+})
+
+FlowRouter.route('/profile', {
+    action(params) {
+        console.log('profile')
     }
 })
