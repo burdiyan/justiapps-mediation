@@ -5,21 +5,20 @@ Message = React.createClass({
 
     getInitialState() {
         return {
-            status: 'unread'
+            messageStatus: this.props.status
         }
     },
 
     toggleReadNotification() {
-        if (this.state.status == 'read') {
+        if (this.state.messageStatus == 'read') {
             return 
         }
-
-        this.setState({status: 'read'})
+        this.setState({messageStatus: 'read'})
     },
 
     render() {
         return (
-            <div className={"notification " + this.state.status} onClick={this.toggleReadNotification}>
+            <div className={`notification ${this.state.messageStatus}`} onClick={this.toggleReadNotification}>
               <div className="notification-mark"></div>
               <div className="notification-text">
                 {this.props.text}
