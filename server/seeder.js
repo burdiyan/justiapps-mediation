@@ -1,6 +1,7 @@
 Meteor.startup(function() {
     // Seed Database
     Meteor.users.remove({})
+    CalendarEvents.remove({})
     // Admin
     Accounts.createUser({
         username: 'burdiyan@gmail.com',
@@ -115,5 +116,11 @@ Meteor.startup(function() {
                 street: 'Calle Velazquez, 50'
             }
         }
+    })
+
+    CalendarEvents.insert({
+        title: 'Sesión con el cliente 1',
+        start: '2015-09-26T16:15:40Z',
+        end: '2015-09-26T18:15:40Z'
     })
 })
