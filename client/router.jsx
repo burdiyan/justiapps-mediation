@@ -7,25 +7,15 @@ function checkLogin(context, redirect) {
 var protectedRoutes = FlowRouter.group({
     triggersEnter: [checkLogin]
 })
-
-FlowRouter.route('/', {
+protectedRoutes.route('/mediators', {
     action(params) {
-        if (!Meteor.userId()) {
-            return ReactLayout.render(App, {
-                title: 'Inicia sesión',
-                content: <LoginForm />,
-                options: []
-            })
-        }
-
         ReactLayout.render(App, {
-            title: 'Medi',
-            content: <p>Hey</p>,
+            title: 'Mediadores',
+            content: <Mediators />,
             options: []
         })
     }
 })
-
 protectedRoutes.route('/calendar', {
     action(params) {
         ReactLayout.render(App, {
@@ -44,17 +34,6 @@ protectedRoutes.route('/calendar', {
         })
     }
 })
-
-protectedRoutes.route('/mediators', {
-    action(params) {
-        ReactLayout.render(App, {
-            title: 'Mediadores',
-            content: <Mediators />,
-            options: []
-        })
-    }
-})
-
 protectedRoutes.route('/cases', {
     action(params) {
         ReactLayout.render(App, {
@@ -64,7 +43,6 @@ protectedRoutes.route('/cases', {
         })
     }
 })
-
 protectedRoutes.route('/notifications', {
     action(params) {
         ReactLayout.render(App, {
@@ -83,7 +61,6 @@ protectedRoutes.route('/notifications', {
         })
     }
 })
-
 protectedRoutes.route('/notifications/unread', {
     action(params) {
         ReactLayout.render(App, {
@@ -103,6 +80,21 @@ protectedRoutes.route('/notifications/unread', {
     }
 })
 
+FlowRouter.route('/', {
+    action(params) {
+        if (!Meteor.userId()) {
+            return ReactLayout.render(App, {
+                title: 'Inicia sesión',
+                content: <LoginForm />
+            })
+        }
+
+        ReactLayout.render(App, {
+            title: 'Medi',
+            content: <p>Hey</p>
+        })
+    }
+})
 
 FlowRouter.route('/about', {
     action(params) {
@@ -147,7 +139,6 @@ protectedRoutes.route('/profile', {
         ReactLayout.render(App, {
             title: 'Mi Perfil',
             content: <Profile />,
-            options: []
         })
     }
 })
