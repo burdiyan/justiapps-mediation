@@ -9,7 +9,7 @@ App = React.createClass({
 
   _renderOption(option, index) {
     if (!option) {
-      return 
+      return null
     }
     return <a key={option+index} 
     href={option.route}>{option.text}</a>

@@ -1,5 +1,23 @@
+function checkLogin(context, redirect) {
+    if (!Meteor.userId()) {
+        redirect('/')
+    }
+}
+
+var protectedRoutes = FlowRouter.group({
+    triggersEnter: [checkLogin]
+})
+
 FlowRouter.route('/', {
     action(params) {
+        if (!Meteor.userId()) {
+            return ReactLayout.render(App, {
+                title: 'Inicia sesión',
+                content: <LoginForm />,
+                options: []
+            })
+        }
+        
         ReactLayout.render(App, {
             title: 'Medi',
             content: <p>Hey</p>,
@@ -8,7 +26,7 @@ FlowRouter.route('/', {
     }
 })
 
-FlowRouter.route('/calendar', {
+protectedRoutes.route('/calendar', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Calendario',
@@ -131,5 +149,11 @@ FlowRouter.route('/profile', {
             content: <Profile />,
             options: []
         })
+    }
+})
+
+FlowRouter.route('/auth/logout', {
+    action() {
+        Meteor.logout()
     }
 })
