@@ -12,7 +12,16 @@ protectedRoutes.route('/mediators', {
         ReactLayout.render(App, {
             title: 'Mediadores',
             content: <Mediators />,
-            options: []
+            options: [
+                {
+                    route: '/mediators',
+                    text: 'Mediadores'
+                },
+                {
+                    route: '/mediators',
+                    text: 'Búsqueda'
+                }
+            ]
         })
     }
 })
@@ -20,7 +29,17 @@ protectedRoutes.route('/calendar', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Calendario',
-            content: <Calendar />
+            content: <Calendar />,
+            options: [
+                {
+                    route: '/calendar',
+                    text: 'Agenda'
+                },
+                {
+                    route: '/calendar',
+                    text: 'Mi horario'
+                }
+            ]
         })
     }
 })

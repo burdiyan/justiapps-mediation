@@ -334,6 +334,55 @@ html, body{
   }
 }
 
+.mediator-container{
+  .mediator-item{
+    width: 100%;
+    border: 1px solid $lineGray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+    @media(max-width: 767px){
+      text-align: center;
+    }
+    .row{
+      margin: 0px;
+      padding: 0px; 
+      .mediator-thumb-inner{
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background: url("http://lorempixel.com/100/100/people");
+        color: $branding;
+        border: 3px solid $branding;
+        border-radius: 50px;
+        width: 100px;
+        height:100px;
+      }
+      .mediator-content{
+        .mediator-name{
+          font-size: 18px;
+          color: $brandingDark;
+          margin-bottom: 5px;
+          font-weight: 700;
+        }
+        i{
+          width: 30px;
+          margin-right: 5px;
+        }
+      }
+    }
+  } 
+}
+
+.calendar-container{
+  .fc-toolbar{
+    color: $branding;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
 .warning{
   color: $warning;
 }

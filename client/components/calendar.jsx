@@ -18,7 +18,9 @@ Calendar = React.createClass({
   },
   render() {
     return (
-        <div id="full-calendar"></div>
+    	<div className="calendar-container container-content">
+        	<div id="full-calendar"></div>
+        </div>
     )
   }
 })  

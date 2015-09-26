@@ -15775,6 +15775,43 @@ html, body {
 .about-container p.small-item {
   margin-bottom: 0px; }
 
+.mediator-container .mediator-item {
+  width: 100%;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 15px; }
+  @media (max-width: 767px) {
+    .mediator-container .mediator-item {
+      text-align: center; } }
+  .mediator-container .mediator-item .row {
+    margin: 0px;
+    padding: 0px; }
+    .mediator-container .mediator-item .row .mediator-thumb-inner {
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background: url("http://lorempixel.com/100/100/people");
+      color: #3498DB;
+      border: 3px solid #3498DB;
+      border-radius: 50px;
+      width: 100px;
+      height: 100px; }
+    .mediator-container .mediator-item .row .mediator-content .mediator-name {
+      font-size: 18px;
+      color: #154360;
+      margin-bottom: 5px;
+      font-weight: 700; }
+    .mediator-container .mediator-item .row .mediator-content i {
+      width: 30px;
+      margin-right: 5px; }
+
+.calendar-container .fc-toolbar {
+  color: #3498DB;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase; }
+
 .warning {
   color: #A93226; }
 
