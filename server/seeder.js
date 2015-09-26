@@ -10,7 +10,7 @@ Meteor.startup(function() {
         profile: {
             title: 'admin',
             firstName: 'Alexandr',
-            lastName: 'Burdiyan'
+            lastName: 'Burdiyan',
         }
     })
 

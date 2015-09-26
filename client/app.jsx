@@ -27,7 +27,7 @@ App = React.createClass({
 
   // TODO: Fix about when not logged in!!!!!
   _renderContent() {
-    if (!Meteor.userId()) {
+    if (FlowRouter.current().path.indexOf('/about') === -1 && !Meteor.userId()) {
       return (
         <div className="panel-content">
           <LoginForm />
