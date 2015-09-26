@@ -53,8 +53,8 @@ Meteor.startup(function() {
         username: 'mediator1',
         email: 'ernesto.sanjuan@hmail.com',
         password: '123456',
-        phone: '+34 627 43 56 91',
         profile: {
+            phone: '+34 627 43 56 91',
             title: 'mediator',
             firstName: 'Ernesto',
             lastName: 'San Juan',
@@ -72,8 +72,8 @@ Meteor.startup(function() {
         username: 'mediator2',
         email: 'miguel.garcia@hmail.com',
         password: '123456',
-        phone: '+34 611 12 13 14',
         profile: {
+            phone: '+34 611 12 13 14',
             title: 'mediator',
             firstName: 'Miguel',
             lastName: 'García',
@@ -91,8 +91,8 @@ Meteor.startup(function() {
         username: 'mediator3',
         email: 'patricia.sanchez@hmail.com',
         password: '123456',
-        phone: '+34 654 32 19 87',
         profile: {
+            phone: '+34 654 32 19 87',
             title: 'mediator',
             firstName: 'Patricia',
             lastName: 'Sánchez',

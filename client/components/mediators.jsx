@@ -1,31 +1,39 @@
 Mediator = React.createClass({
   render() {
     return (
-        <div className="mediator-item">
-          <div className="row">
-            <div className="col-sm-3 mediator-thumb">
-              <div className="mediator-thumb-inner">
-              </div>
+      <div className="mediator-item">
+        <div className="row">
+          <div className="col-sm-3 mediator-thumb">
+            <div className="mediator-thumb-inner">
             </div>
-            <div className="col-sm-9 mediator-content">
-              <div className="mediator-name">
-                {this.props.name}
-              </div>
-              <div className="mediator-association">
-                <i className="bi_doc-briefcase-c"></i>
-                {this.props.association}
-              </div>
-              <div className="mediator-specialization">
-                <i className="bi_com-bubble-line-b"></i>
-                {this.props.specialization}
-              </div>
-              <div className="mediator-city">
-                <i className="bi_location-pin-map"></i>
-                {this.props.address.city}
-              </div>
+          </div>
+          <div className="col-sm-9 mediator-content">
+            <div className="mediator-name">
+              {this.props.name}
+            </div>
+            <div className="mediator-association">
+              <i className="bi_com-phone-a"></i>
+              {this.props.phone}
+            </div>
+            <div className="mediator-association">
+              <i className="bi_doc-briefcase-c"></i>
+              {this.props.association}
+            </div>
+            <div className="mediator-specialization">
+              <i className="bi_com-bubble-line-b"></i>
+              {this.props.specialization}
+            </div>
+            <div className="mediator-city">
+              <i className="bi_location-pin-map"></i>
+              {this.props.address.city}
+            </div>
+            <div className="mediator-city">
+              <i className="bi_location-map"></i>
+              {this.props.address.street}
             </div>
           </div>
         </div>
+      </div>
     )  
   }
 })
@@ -41,7 +49,8 @@ Mediators = React.createClass({
     return <Mediator name={data.profile.firstName + ' ' + data.profile.lastName} 
                      association={data.profile.association} 
                      specialization={data.profile.specialization}
-                     address={data.profile.address} />
+                     address={data.profile.address}
+                     phone={data.profile.phone}/>
   },
   render() {
     return (
