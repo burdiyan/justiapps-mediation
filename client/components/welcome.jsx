@@ -21,6 +21,8 @@ Welcome = React.createClass({
           </div>
           <div className="content-small-text">
             <p>Hola, <strong>{this.data.currentUser.profile.firstName}</strong>!</p>
+            <p><strong>No pierdas el juicio. Hablando se entiende la gente.</strong></p>
+            <p>#MEDIApp</p>
           </div>
         </div>
       )
