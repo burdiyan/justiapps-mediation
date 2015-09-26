@@ -1,4 +1,4 @@
-About = React.createClass({
+AboutMediation = React.createClass({
   render() {
     return (
       <div className="about-container container-content">

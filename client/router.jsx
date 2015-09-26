@@ -69,15 +69,34 @@ FlowRouter.route('/notifications', {
 FlowRouter.route('/about', {
     action(params) {
         ReactLayout.render(App, {
-            title: 'Acerca de',
-            content: <About />,
+            title: 'Acerca de Medi',
+            content: <AboutMedi />,
             options: [
                 {
-                    route: '',
+                    route: '/about',
                     text: 'Acerca de MEDI'
                 },
                 {
-                    route: '/about/whatis',
+                    route: '/about/mediation',
+                    text: 'Mediación'
+                }
+            ]
+        })
+    }
+})
+
+FlowRouter.route('/about/mediation', {
+    action() {
+        ReactLayout.render(App, {
+            title: 'Acerca de Medi',
+            content: <AboutMediation />,
+            options: [
+                {
+                    route: '/about',
+                    text: 'Acerca de MEDI'
+                },
+                {
+                    route: '/about/mediation',
                     text: 'Mediación'
                 }
             ]
