@@ -127,12 +127,13 @@ FlowRouter.route('/about/mediation', {
     }
 })
 
-protectedRoutes.route('/profile', {
-    action(params) {
-        ReactLayout.render(App, {
-            title: 'Mi Perfil',
-            content: <Profile />,
-        })
+protectedRoutes.route('/logout', {
+    triggersEnter: [function(context, redirect) {
+        Meteor.logout()
+        redirect('/')
+    }],
+    action() {
+
     }
 })
 
