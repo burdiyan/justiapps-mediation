@@ -27,14 +27,33 @@ html, body{
         rgba($branding, 0.5)
       ),url(http://lorempixel.com/g/400/1024/abstract/2);
     background-size: cover;
+    &.mobile{
+      box-shadow: 2px 0px 5px $brandingDark;
+    }
     .panel-header{
       width: 100%;
       height: 100px;
+      #branding{
+        padding: 20px 10px;
+        font-size: 40px;
+        line-height: 60px;
+        color: $brandingLight;
+        #branding-icon{
+          display: inline-block;
+          margin-right: 10px;
+        }
+        #branding-title{
+          display: inline-block;
+          font-weight: 200;
+          letter-spacing: 0.2em;
+        }
+      }
       #close-menu-button{
         position: absolute;
-        top: 30px;
+        top: 20px;
         right: 15px;
         cursor: pointer;
+        line-height: 60px;
         @media(min-width: 768px){
           display: none;
         }

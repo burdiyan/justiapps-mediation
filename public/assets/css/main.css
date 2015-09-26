@@ -15527,14 +15527,29 @@ html, body {
     width: 25%;
     background: linear-gradient(rgba(52, 152, 219, 0.5), rgba(52, 152, 219, 0.5)), url(http://lorempixel.com/g/400/1024/abstract/2);
     background-size: cover; }
+    #main-container #panel-left.mobile {
+      box-shadow: 2px 0px 5px #154360; }
     #main-container #panel-left .panel-header {
       width: 100%;
       height: 100px; }
+      #main-container #panel-left .panel-header #branding {
+        padding: 20px 10px;
+        font-size: 40px;
+        line-height: 60px;
+        color: #D6EAF8; }
+        #main-container #panel-left .panel-header #branding #branding-icon {
+          display: inline-block;
+          margin-right: 10px; }
+        #main-container #panel-left .panel-header #branding #branding-title {
+          display: inline-block;
+          font-weight: 200;
+          letter-spacing: 0.2em; }
       #main-container #panel-left .panel-header #close-menu-button {
         position: absolute;
-        top: 30px;
+        top: 20px;
         right: 15px;
-        cursor: pointer; }
+        cursor: pointer;
+        line-height: 60px; }
         @media (min-width: 768px) {
           #main-container #panel-left .panel-header #close-menu-button {
             display: none; } }

@@ -25,11 +25,13 @@ App = React.createClass({
   },
 
   openHamburgerMenu() {
-    $("#panel-left").stop().velocity({marginLeft: 0})
+    $("#panel-left").addClass('mobile');
+    $("#panel-left").stop().velocity({marginLeft: 0});
   },
 
   closeHamburgerMenu() {
-    $("#panel-left").stop().velocity("reverse")
+    $("#panel-left").removeClass('mobile');
+    $("#panel-left").stop().velocity("reverse");
   },
 
   render() {
@@ -41,7 +43,12 @@ App = React.createClass({
               <i className="bi_interface-cross"></i>
             </div>
             <div id="branding">
-              <div id="branding-icon"></div>
+              <div id="branding-icon">
+                <i className="bi_music-repeat-a"></i>
+              </div>
+              <div id="branding-title">
+                MEDI
+              </div>
             </div>
           </div>
 

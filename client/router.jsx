@@ -1,6 +1,7 @@
 FlowRouter.route('/', {
     action(params) {
         ReactLayout.render(App, {
+            title: 'Medi',
             content: <p>Hey</p>
         })
     }
