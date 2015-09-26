@@ -15703,10 +15703,18 @@ html, body {
 @media (min-width: 768px) {
   .about-container p {
     text-align: justify; } }
-.about-container .title {
+.about-container p.title {
   color: #3498DB;
-  font-size: 24px; }
-  .about-container .title:not(:first-of-type) {
+  font-size: 18px;
+  font-weight: 700; }
+  .about-container p.title:not(:first-of-type) {
     margin-top: 30px; }
+.about-container p.subtitle {
+  color: #3498DB;
+  font-size: 18px;
+  margin-top: 30px;
+  font-weight: 700; }
+.about-container p.small-item {
+  margin-bottom: 0px; }
 
 /*# sourceMappingURL=main.css.map */

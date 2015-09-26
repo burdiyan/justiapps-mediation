@@ -89,7 +89,7 @@ FlowRouter.route('/notifications/unread', {
 FlowRouter.route('/about', {
     action(params) {
         ReactLayout.render(App, {
-            title: 'Acerca de Medi',
+            title: 'Acerca de',
             content: <AboutMedi />,
             options: [
                 {

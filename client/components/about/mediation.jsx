@@ -2,19 +2,19 @@ AboutMediation = React.createClass({
   render() {
     return (
       <div className="about-container container-content">
-        <p className="title">¿QUE ES LA MEDIACION?</p>
+        <p className="title">¿Qué es la mediación?</p>
         <p>La mediación es un proceso mediante el cual las partes involucradas en un conflicto buscan una solución consensuada a través de la comunicación y con la ayuda de un mediador. Es un proceso de solución de conflictos complementario a los tradicionales, como el judicial y el arbitraje, y es aplicable a todo tipos de conflictos.</p>
         <p>La mediación puede ser hecha de una forma extrajudicial cuando no existe un procedimiento judicial en marcha o intrajudicial, cuando el juez intenta que las partes lleguen a un acuerdo en mediación.</p>
-        <p className="title">EL MEDIADOR</p>
+        <p className="title">El mediador</p>
         <p>El mediador es un profesional que facilita la comunicación entre las partes y les ayuda a buscar una solución para su conflicto. El mediador no juzga ni asesora las partes, es un profesional neutral e imparcial que ayuda a las partes a llegar a un acuerdo. </p>
         <p>Todos los mediadores de nuestra APP están registrados/asociados a instituciones oficiales  y poseen la formación requerida por la legislación española. El conocimiento de los métodos y técnicas de mediación es esencial para que una mediación pueda ser hecha de acuerdo con los principios y que el profesional pueda hacer un trabajo con calidad.</p>
-        <p className="title">LOS PRINCIPIOS DE LA MEDIACION</p>
+        <p className="title">Los principios de la mediación</p>
         <p>El mediador ejerce su papel de una forma imparcial y neutral. La imparcialidad es la necesidad del mediador de mantener equidistancia entre las partes, de no simpatizar con alguna de ellas o con sus intereses y posiciones. Se trata de actuar de una forma igual para las partes, sin perjudicar ni beneficiar nadie. La neutralidad es la necesidad del mediador de no implicarse en el conflicto, de no dejar que sus prejuicios, creencias y valores personales prevalezcan sobre las partes y el tema de la mediación, o que sus creencias personales no conduzcan la mediación hacia un determinado camino o solución.</p>
         <p>La mediación es un proceso voluntario porque las partes son libres para decidir participar del proceso, pedir su interrupción y terminarla en cualquier momento. También significa que las partes son libres para firmar o no un acuerdo y que este es fruto de su voluntad y libertad.</p>
         <p>La mediación también es un proceso confidencial ya que toda la información intercambiada entre las partes durante el procedimiento no puede ser usada en un proceso judicial o para cualquier fin ajeno a la mediación. Asimismo ningún participante en mediación puede revelar a terceros el contenido de la mediación y el mediador no puede intervenir como testigo en el proceso judicial.</p>
         <p>Los principios de la mediación garantizan la calidad del proceso.</p>
 
-        <p className="title">LA IMPORTANCIA DE LA MEDIACION </p>
+        <p className="title">La importancia de la mediación</p>
         <p>Comparado a otros procesos de solución de conflictos la mediación posee las siguientes ventajas:</p>
         <p>RAPIDEZ. La mediación es un método ágil y sencillo que permite acortar los tiempos, ya que su duración es más breve que un proceso judicial o arbitral debido a su estructura mas informal y flexible. La mediación también reduce el tiempo de incertidumbre en cuanto a resolución del conflicto, hecho que es muy positivo en cualquier disputa.</p>
         <p>ECONOMIA La mediación también representa una economía de costes, tanto para las partes que pueden ahorrar con abogados y tasas, como para el Estado que no necesita costear un proceso cuando las partes podrían resolver la cuestión de una forma amigable a través de la mediación.</p>
