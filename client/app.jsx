@@ -10,7 +10,7 @@ App = React.createClass({
               <i className="bi_time-calendar-a"></i>
             </div>
             <div className="menu-text">
-              Calendario
+              <a href="/calendar">Calendario</a>
             </div>
             <div className="menu-arrow">
               <i className="bi_interface-right"></i>
@@ -73,8 +73,8 @@ App = React.createClass({
           </div>
         </div>
         <div id="panel-main">
-          <div id="panel-titlebar-up">
-          </div>
+          <div id="panel-titlebar-up">{this.props.title}</div>
+          {this.props.content}
         </div>
       </div>
     )
