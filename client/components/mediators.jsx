@@ -13,7 +13,7 @@ Mediator = React.createClass({
               </div>
               <div className="mediator-association">
                 <i className="bi_doc-briefcase-c"></i>
-                {this.props.association.join(', ')}
+                {this.props.association}
               </div>
               <div className="mediator-specialization">
                 <i className="bi_com-bubble-line-b"></i>
