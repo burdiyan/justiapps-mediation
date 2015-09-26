@@ -3,16 +3,23 @@ CasesList = React.createClass({
 
   getMeteorData() {
     let currentUser = Meteor.user()
+    let profileTitle = currentUser.profile.title
     return {
         cases: Cases.find({
-            'currentUser.profile.title': currentUser.profile.username
+          profileTitle: currentUser.profile.username
         }).fetch()
     }
   },
 
+  _renderCase(data) {
+    return <Case item={data} key={data._id} />
+  },
+
   render() {
     return (
-        <p>{this.data.cases}</p>
+      <div>
+        {this.data.cases.map(this._renderCase)}
+      </div>
     )
   }
 })  
