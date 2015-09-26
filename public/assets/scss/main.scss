@@ -1,1 +1,73 @@
 @import "modules/all";
+
+html, body{
+  font-size: 14px;
+  font-family: 'Proxima Nova';
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+#main-container{
+  margin: 0px;
+  padding: 0px;
+  #panel-left{
+    background-color: $branding;
+    color: $textWhite;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 25%;
+    background: linear-gradient(
+        rgba($branding, 0.5), 
+        rgba($branding, 0.5)
+      ),url(http://lorempixel.com/g/400/1024/abstract/2);
+    background-size: cover;
+    .panel-header{
+      width: 100%;
+      height: 100px;
+    }
+    .menu-item{
+      width: 100%;
+      height: 50px;
+      padding: 15px;
+      font-size: 18px;
+      line-height: 20px;
+      border-top: 1px solid $brandingLight;
+      .menu-icon{
+        
+      }
+      &.menu-bottom{
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+      }
+      &.line-bottom{
+        border-bottom: 1px solid $brandingLight;
+      }
+    }
+  }
+  #panel-main{
+    background-color: $bgWhite;
+    color: $textDarkGray;
+    min-height: 100vh;
+  }
+  @media(max-width: 991px){
+    #panel-left{
+      width: 75%;
+      margin-left: -75%;
+    }
+    #panel-main{
+      width: 100%;
+    }
+  }
+  @media(min-width: 992px){
+    #panel-main{
+      width: 75%;
+      margin-left: 25%;
+    }
+  }
+}
