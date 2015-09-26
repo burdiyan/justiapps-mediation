@@ -15,7 +15,7 @@ App = React.createClass({
             <div id="close-menu-button" onClick={this.closeHamburgerMenu}>
               <i className="bi_interface-cross"></i>
             </div>
-            <div id="branding">
+            <div id="branding" onClick={this.openHome}>
               <div id="branding-icon">
                 <i className="bi_music-repeat-a"></i>
               </div>
@@ -149,5 +149,9 @@ App = React.createClass({
   closeHamburgerMenu() {
     $("#panel-left").removeClass('mobile');
     $("#panel-left").stop().velocity("reverse");
+  },
+
+  openHome() {
+    FlowRouter.go('/')
   }
 });
