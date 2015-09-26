@@ -7,6 +7,13 @@ App = React.createClass({
     }
   },
 
+  _renderOption(option, index) {
+    if (!option) {
+      return 
+    }
+    return <a key={option+index} href={option.route}>{option.text}</a>
+  },
+
   render() {
     return (
       <div className="container-fluid" id="main-container">
@@ -107,9 +114,7 @@ App = React.createClass({
               {this.props.title}
             </div>
             <div className="panel-titlebar-down">
-              <a href="#">Option 1</a>
-              <a href="#">Option 2</a>
-              <a href="#">Option 3</a>
+              {this.props.options.map(this._renderOption)}
             </div>
             <div className="panel-content">
               {this.props.content}
