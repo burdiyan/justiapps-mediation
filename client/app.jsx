@@ -114,6 +114,11 @@ App = React.createClass({
             <div className="panel-titlebar-up">
               {this.props.title}
             </div>
+            <div className="panel-titlebar-down">
+              <a href="#">Option 1</a>
+              <a href="#">Option 2</a>
+              <a href="#">Option 3</a>
+            </div>
             <div className="panel-content">
               {this.props.content}
             </div>
