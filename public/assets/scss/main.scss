@@ -7,7 +7,20 @@ html, body{
   margin: 0px;
   padding: 0px;
   border: none;
-  overflow-x: hidden;
+}
+
+#splash{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: $bgWhite url(../img/splash.png) no-repeat center;
+  background-size: 300px auto;
+  @media(min-width: 1170px){
+    display: none;
+  }
 }
 
 #main-container{

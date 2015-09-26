@@ -12,9 +12,18 @@
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/fullcalendar.min.css">
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/fullcalendar.print.css">
   <script type="text/javascript" source="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+    $(window).load(function(){
+      setTimeout(function(){
+        $("#splash").fadeOut(800);
+      }, 800);
+    });
+  </script>
 </head>
  
 <body>
+  <div id="splash">
+  </div>
   <div id="render-target">
   </div>
 </body>
