@@ -43,12 +43,37 @@ App = React.createClass({
             </div>
           </div>
 
-          <MenuItem name="Calendario" route="/calendar" icon="bi_time-calendar-a" />
-          <MenuItem name="Mediadores" route="/mediators" icon="bi_user-single-a-group" />
-          <MenuItem name="Mis casos" route="/cases" icon="bi_user-contact-book" />
-          <MenuItem name="Notificaciones" route="/notifications" icon="bi_setting-notification" />
-          <MenuItem name="Acerca de" route="/about" icon="bi_doc-file-line-a" bottom="line-bottom" />
-          <MenuItem name="Perfil" route="/profile" icon="bi_setting-gear-a" bottom="menu-bottom" />
+          <MenuItem name="Calendario" 
+                    route="/calendar" 
+                    icon="bi_time-calendar-a" 
+                    permissions={['admin', 'judge', 'mediator']} />
+          
+          <MenuItem name="Mediadores" 
+                    route="/mediators" 
+                    icon="bi_user-single-a-group"
+                    permissions={['admin', 'judge', 'mediator']} />
+          
+          <MenuItem name="Mis casos" 
+                    route="/cases" 
+                    icon="bi_user-contact-book"
+                    permissions={['admin', 'judge', 'mediator']} />
+          
+          <MenuItem name="Notificaciones" 
+                    route="/notifications" 
+                    icon="bi_setting-notification"
+                    permissions={['admin', 'judge', 'mediator']} />
+          
+          <MenuItem name="Acerca de" 
+                    route="/about" 
+                    icon="bi_doc-file-line-a" 
+                    bottom="line-bottom"
+                    permissions={[]} />
+          
+          <MenuItem name="Perfil" 
+                    route="/profile" 
+                    icon="bi_setting-gear-a" 
+                    bottom="menu-bottom"
+                    permissions={['admin', 'judge', 'mediator']} />
         </div>
 
         <div id="panel-main">
