@@ -3,7 +3,8 @@ App = React.createClass({
 
   getMeteorData() {
     return {
-      currentUser: Meteor.user()
+      currentUser: Meteor.user(),
+      unreadNotifications: Notifications.find({read: false}).count()
     }
   },
 
@@ -88,7 +89,8 @@ App = React.createClass({
           <MenuItem name="Notificaciones" 
                     route="/notifications" 
                     icon="bi_setting-notification"
-                    permissions={['admin', 'judge', 'mediator', 'customer']} />
+                    permissions={['admin', 'judge', 'mediator', 'customer']} 
+                    count={this.data.unreadNotifications} />
           
           <MenuItem name="Acerca de" 
                     route="/about" 

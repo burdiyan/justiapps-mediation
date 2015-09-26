@@ -27,7 +27,7 @@ MenuItem = React.createClass({
               <i className={this.props.icon}></i>
             </div>
             <div className="menu-text">
-              {this.props.name}
+              {this.props.name} {this.props.count ? `(${this.props.count})` : ''}
             </div>
             <div className="menu-arrow">
               <i className="bi_interface-right"></i>

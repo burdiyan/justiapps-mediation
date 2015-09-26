@@ -2,6 +2,11 @@ NotificationsList = React.createClass({
   mixins: [ReactMeteorData],
 
   getMeteorData() {
+    if (this.props.unread) {
+      return {
+        notifications: Notifications.find({read: false}).fetch()
+      }  
+    }
     return {
       notifications: Notifications.find({}).fetch()
     }

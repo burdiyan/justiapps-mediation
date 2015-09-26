@@ -92,7 +92,20 @@ protectedRoutes.route('/notifications', {
 })
 protectedRoutes.route('/notifications/unread', {
     action(params) {
-        
+        ReactLayout.render(App, {
+            title: 'Notificaciones',
+            content: <NotificationsList unread={true} />,
+            options: [
+                {
+                    route: '/notifications',
+                    text: 'Todo'
+                },
+                {
+                    route: '/notifications/unread',
+                    text: 'No leído'
+                }
+            ]
+        })
     }
 })
 
