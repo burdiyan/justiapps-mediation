@@ -15692,7 +15692,7 @@ html, body {
     -webkit-appearance: none;
     border: 1px solid #CCCCCC;
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-left: 15px; }
   .container-content-small form button {
     width: 100%;
@@ -15774,5 +15774,8 @@ html, body {
   font-weight: 700; }
 .about-container p.small-item {
   margin-bottom: 0px; }
+
+.warning {
+  color: #A93226; }
 
 /*# sourceMappingURL=main.css.map */

@@ -23,7 +23,7 @@ LoginForm = React.createClass({
     },
     _renderErrors() {
         if (this.state.failed) {
-            return <p>ERROR</p>
+            return <p className="warning">Usuario o contraseña invalida.</p>
         }
         return null
     },

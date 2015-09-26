@@ -228,7 +228,7 @@ html, body{
       -webkit-appearance: none;
       border: 1px solid $lineGray;
       border-radius: 5px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       padding-left: 15px;
     }
     button{
@@ -332,4 +332,8 @@ html, body{
       margin-bottom: 0px;
     }
   }
+}
+
+.warning{
+  color: $warning;
 }
