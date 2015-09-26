@@ -15510,8 +15510,7 @@ html, body {
   font-weight: 400;
   margin: 0px;
   padding: 0px;
-  border: none;
-  -webkit-overflow-scrolling: touch; }
+  border: none; }
 
 #splash {
   position: fixed;
@@ -15660,8 +15659,8 @@ html, body {
       padding: 130px 15px 30px 15px; }
   @media (max-width: 767px) {
     #main-container #panel-left {
-      width: 75%;
-      margin-left: -75%; }
+      width: 300px;
+      margin-left: -300px; }
     #main-container #panel-main {
       width: 100%; } }
   @media (min-width: 768px) {

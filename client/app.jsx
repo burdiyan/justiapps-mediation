@@ -44,12 +44,12 @@ App = React.createClass({
 
   openHamburgerMenu() {
     $("#panel-left").addClass('mobile');
-    $("#panel-left").stop().velocity({marginLeft: 0});
+    $("#panel-left").stop().velocity({marginLeft: 0}, {duration: 200});
   },
 
   closeHamburgerMenu() {
     $("#panel-left").removeClass('mobile');
-    $("#panel-left").stop().velocity("reverse");
+    $("#panel-left").stop().velocity({marginLeft: -300}, {duration: 200});
   },
 
   render() {

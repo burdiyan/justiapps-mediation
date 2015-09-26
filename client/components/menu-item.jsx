@@ -11,7 +11,14 @@ MenuItem = React.createClass({
       }
     },
     navigate() {
-        FlowRouter.go(this.props.route)
+        FlowRouter.go(this.props.route);
+        this.automaticCloseMenu();
+    },
+    automaticCloseMenu() {
+      if (window.innerWidth < 768){
+        $("#panel-left").removeClass('mobile');
+        $("#panel-left").stop().velocity({marginLeft: -300}, {duration: 200});
+      }
     },
     _renderItem() {
       return (
