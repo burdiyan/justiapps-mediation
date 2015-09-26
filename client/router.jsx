@@ -67,7 +67,7 @@ protectedRoutes.route('/cases', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Casos y procedimientos',
-            content: <Cases />,
+            content: <CasesList />,
             options: []
         })
     }
@@ -112,7 +112,7 @@ protectedRoutes.route('/notifications/unread', {
 FlowRouter.route('/', {
     action(params) {
         ReactLayout.render(App, {
-            title: 'Bienvenidos',
+            title: 'Bienvenid@',
             content: <Welcome />
         })
     }

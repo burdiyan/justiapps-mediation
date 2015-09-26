@@ -209,4 +209,13 @@ Meteor.startup(function() {
         read: false    
     })
 
+    // Cases
+    Cases.insert({
+        title: 'Foobar',
+        mediator: '',
+        judge: 'judge1',
+        open: true,
+        parties: [],
+        description: ''
+    })
 })
