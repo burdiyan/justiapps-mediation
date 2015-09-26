@@ -10,8 +10,7 @@ Mediators = React.createClass({
                          association={data.profile.association} 
                          specialization={data.profile.specialization}
                          address={data.profile.address}
-                         phone={data.profile.phone}
-                         avatar={data.profile.avatar} />
+                         phone={data.profile.phone} />
   },
   render() {
     return (

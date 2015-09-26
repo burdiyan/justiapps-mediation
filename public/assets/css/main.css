@@ -15790,7 +15790,6 @@ html, body {
     .mediator-container .mediator-item .row .mediator-thumb-inner {
       background-repeat: no-repeat;
       background-position: 50%;
-      background: url("http://lorempixel.com/100/100/people");
       color: #3498DB;
       border: 3px solid #3498DB;
       border-radius: 50px;

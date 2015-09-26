@@ -4,7 +4,7 @@ MediatorCard = React.createClass({
       <div className="mediator-item">
         <div className="row">
           <div className="col-sm-3 mediator-thumb">
-            <img src={this.props.avatar} className="mediator-thumb-inner"></img>
+            <img src={`http://api.adorable.io/avatars/100/${Math.random()}`} className="mediator-thumb-inner"></img>
           </div>
           <div className="col-sm-9 mediator-content">
             <div className="mediator-name">
