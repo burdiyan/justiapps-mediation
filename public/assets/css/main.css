@@ -15678,9 +15678,33 @@ html, body {
       font-size: 18px;
       font-weight: 700; }
   .container-content-small form input[type=text] {
+    margin-top: 10px;
     width: 100%;
     height: 36px;
-    -webkit-appearance: none; }
+    -webkit-appearance: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 15px; }
+  .container-content-small form input[type=password] {
+    width: 100%;
+    height: 36px;
+    -webkit-appearance: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding-left: 15px; }
+  .container-content-small form button {
+    width: 100%;
+    height: 36px;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #3498DB; }
+    .container-content-small form button:hover, .container-content-small form button:active {
+      background-color: #154360; }
   .container-content-small .profile-actions {
     border-top: 1px solid #CCCCCC; }
     .container-content-small .profile-actions .profile-action {

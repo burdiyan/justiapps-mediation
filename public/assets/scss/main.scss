@@ -213,9 +213,36 @@ html, body{
   }
   form{
     input[type=text]{
+      margin-top: 10px;
       width: 100%;
       height: 36px;
       -webkit-appearance: none;
+      border: 1px solid $lineGray;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding-left: 15px;
+    }
+    input[type=password]{
+      width: 100%;
+      height: 36px;
+      -webkit-appearance: none;
+      border: 1px solid $lineGray;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      padding-left: 15px;
+    }
+    button{
+      width: 100%;
+      height: 36px;
+      -webkit-appearance: none;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      border: none;
+      color: $textWhite;
+      background-color: $branding;
+      &:hover, &:active{
+        background-color: $brandingDark;
+      }
     }
   }
   .profile-actions{
