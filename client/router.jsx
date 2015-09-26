@@ -19,7 +19,8 @@ FlowRouter.route('/calendar', {
 FlowRouter.route('/mediators', {
     action(params) {
         ReactLayout.render(App, {
-            title: 'Mediadores'
+            title: 'Mediadores',
+            content: <Mediators />
         })
     }
 })
@@ -27,14 +28,18 @@ FlowRouter.route('/mediators', {
 FlowRouter.route('/cases', {
     action(params) {
         ReactLayout.render(App, {
-            title: 'Mis casos'
+            title: 'Mis casos',
+            content: <Cases />
         })
     }
 })
 
 FlowRouter.route('/notifications', {
     action(params) {
-        console.log('notifications')
+        ReactLayout.render(App, {
+            title: 'Notificaciones',
+            content: <Notifications />
+        })
     }
 })
 
