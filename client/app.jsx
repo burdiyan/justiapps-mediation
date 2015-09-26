@@ -46,22 +46,22 @@ App = React.createClass({
           <MenuItem name="Calendario" 
                     route="/calendar" 
                     icon="bi_time-calendar-a" 
-                    permissions={['admin']} />
+                    permissions={['admin', 'judge', 'mediator']} />
           
           <MenuItem name="Mediadores" 
                     route="/mediators" 
                     icon="bi_user-single-a-group"
-                    permissions={[]} />
+                    permissions={['admin', 'judge', 'customer']} />
           
           <MenuItem name="Mis casos" 
                     route="/cases" 
                     icon="bi_user-contact-book"
-                    permissions={[]} />
+                    permissions={['admin', 'judge', 'mediator', 'customer']} />
           
           <MenuItem name="Notificaciones" 
                     route="/notifications" 
                     icon="bi_setting-notification"
-                    permissions={[]} />
+                    permissions={['admin', 'judge', 'mediator', 'customer']} />
           
           <MenuItem name="Acerca de" 
                     route="/about" 
@@ -73,7 +73,7 @@ App = React.createClass({
                     route="/profile" 
                     icon="bi_setting-gear-a" 
                     bottom="menu-bottom"
-                    permissions={[]} />
+                    permissions={['admin', 'judge', 'mediator', 'customer']} />
         </div>
 
         <div id="panel-main">
