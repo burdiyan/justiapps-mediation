@@ -19,7 +19,7 @@ Notifications = React.createClass({
 
   render() {
     return (
-      <div className="notification-container">
+      <div className="notification-container container-content">
         {this.state.notifications.map(this._renderNotification)}
       </div>
     )

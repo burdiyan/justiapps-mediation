@@ -71,7 +71,16 @@ FlowRouter.route('/about', {
         ReactLayout.render(App, {
             title: 'Acerca de',
             content: <About />,
-            options: []
+            options: [
+                {
+                    route: '',
+                    text: 'Acerca de MEDI'
+                },
+                {
+                    route: '/about/whatis',
+                    text: 'Mediación'
+                }
+            ]
         })
     }
 })
