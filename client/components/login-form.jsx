@@ -13,6 +13,11 @@ LoginForm = React.createClass({
                 Inicia Sesión
               </div>
             </div>
+            <form>
+              <input type="text" name="username" placeholder="Username" />
+              <input type="password" name="password" placeholder="Password" />
+              <button>Enviar</button>
+            </form>
           </div>
         )
     }
