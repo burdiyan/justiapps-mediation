@@ -26,6 +26,7 @@ App = React.createClass({
     )
   },
 
+  // TODO: Fix about when not logged in!!!!!
   _renderContent() {
     if (!Meteor.userId()) {
       return (
