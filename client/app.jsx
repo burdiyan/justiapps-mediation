@@ -17,6 +17,7 @@ App = React.createClass({
           </div>
           <div className="menu-item">
             <div className="menu-icon">
+              <i className="bi_user-single-a-group"></i>
             </div>
             <div className="menu-text">
               Mediadores
@@ -26,6 +27,7 @@ App = React.createClass({
           </div>
           <div className="menu-item">
             <div className="menu-icon">
+              <i className="bi_user-contact-book"></i>
             </div>
             <div className="menu-text">
               Mis Casos
@@ -35,6 +37,7 @@ App = React.createClass({
           </div>
           <div className="menu-item">
             <div className="menu-icon">
+              <i className="bi_setting-notification"></i>
             </div>
             <div className="menu-text">
               Notificaciones
@@ -44,6 +47,7 @@ App = React.createClass({
           </div>
           <div className="menu-item line-bottom">
             <div className="menu-icon">
+              <i className="bi_doc-file-line-a"></i>
             </div>
             <div className="menu-text">
               Acerca de
@@ -53,6 +57,7 @@ App = React.createClass({
           </div>
           <div className="menu-item menu-bottom">
             <div className="menu-icon">
+              <i className="bi_setting-gear-a"></i>
             </div>
             <div className="menu-text">
               Perfil
