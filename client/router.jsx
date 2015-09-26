@@ -82,13 +82,6 @@ protectedRoutes.route('/notifications/unread', {
 
 FlowRouter.route('/', {
     action(params) {
-        if (!Meteor.userId()) {
-            return ReactLayout.render(App, {
-                title: 'Inicia sesión',
-                content: <LoginForm />
-            })
-        }
-
         ReactLayout.render(App, {
             title: 'Medi',
             content: <p>Hey</p>

@@ -26,6 +26,22 @@ App = React.createClass({
     )
   },
 
+  _renderContent() {
+    if (!Meteor.userId()) {
+      return (
+        <div className="panel-content">
+          <LoginForm />
+        </div>
+      )
+    }
+
+    return (
+      <div className="panel-content">
+        {this.props.content}
+      </div>
+    )
+  },
+
   openHamburgerMenu() {
     $("#panel-left").addClass('mobile');
     $("#panel-left").stop().velocity({marginLeft: 0});
@@ -95,10 +111,10 @@ App = React.createClass({
             <div className="panel-titlebar-up">
               {this.props.title}
             </div>
+
             {this._renderOptions()}
-            <div className="panel-content">
-              {this.props.content}
-            </div>
+            
+            {this._renderContent()}
           </div>
         </div>
       </div>
