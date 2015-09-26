@@ -11,9 +11,10 @@ Message = React.createClass({
 
     toggleReadNotification() {
         if (this.state.messageStatus == 'read') {
-            return 
+            this.setState({messageStatus: 'unread'})
+        } else {
+            this.setState({messageStatus: 'read'})
         }
-        this.setState({messageStatus: 'read'})
     },
 
     render() {
