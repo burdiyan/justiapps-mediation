@@ -20,12 +20,24 @@ App = React.createClass({
   },
   // CHAPUZA MODE OFF
 
+  componentDidMount() {
+    console.log('Hey THERE')
+  },
+
+  openHamburgerMenu() {
+    $("#panel-left").stop().velocity({marginLeft: 0})
+  },
+
+  closeHamburgerMenu() {
+    $("#panel-left").stop().velocity("reverse")
+  },
+
   render() {
     return (
       <div className="container-fluid" id="main-container">
         <div id="panel-left">
           <div className="panel-header">
-            <div id="close-menu-button">
+            <div id="close-menu-button" onClick={this.closeHamburgerMenu}>
               <i className="bi_interface-cross"></i>
             </div>
             <div id="branding">
@@ -107,7 +119,7 @@ App = React.createClass({
         </div>
 
         <div id="panel-main">
-          <div id="hamburger-menu-button">
+          <div id="hamburger-menu-button" onClick={this.openHamburgerMenu}>
             <i className="bi_interface-hamburger"></i>
           </div>
           <div className="content-container">
