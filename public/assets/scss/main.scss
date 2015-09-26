@@ -189,6 +189,30 @@ html, body{
   padding: 0px 15px;
 }
 
+.container-content-small{
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid $lineGray;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 15px auto;
+  .branding{
+    color: $brandingDark;
+    .branding-icon{
+      font-size: 60px;
+    }
+    .branding-title{
+      font-size: 36px;
+      margin-left: 0.2em;
+      letter-spacing: 0.2em;
+    }
+    .branding-subtitle{
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+
 .notification-container{
   .notification{
     padding: 15px;

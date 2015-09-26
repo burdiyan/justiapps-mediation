@@ -15659,6 +15659,25 @@ html, body {
 .container-content {
   padding: 0px 15px; }
 
+.container-content-small {
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 15px auto; }
+  .container-content-small .branding {
+    color: #154360; }
+    .container-content-small .branding .branding-icon {
+      font-size: 60px; }
+    .container-content-small .branding .branding-title {
+      font-size: 36px;
+      margin-left: 0.2em;
+      letter-spacing: 0.2em; }
+    .container-content-small .branding .branding-subtitle {
+      font-size: 18px;
+      font-weight: 700; }
+
 .notification-container .notification {
   padding: 15px;
   color: #444444;
