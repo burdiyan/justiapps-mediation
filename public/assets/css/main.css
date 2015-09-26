@@ -15805,6 +15805,13 @@ html, body {
       width: 30px;
       margin-right: 5px; }
 
+.calendar-container .fc-toolbar {
+  color: #3498DB;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase; }
+
 .warning {
   color: #A93226; }
 

@@ -373,6 +373,16 @@ html, body{
   } 
 }
 
+.calendar-container{
+  .fc-toolbar{
+    color: $branding;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
 .warning{
   color: $warning;
 }

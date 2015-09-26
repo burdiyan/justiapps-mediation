@@ -29,7 +29,17 @@ protectedRoutes.route('/calendar', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Calendario',
-            content: <Calendar />
+            content: <Calendar />,
+            options: [
+                {
+                    route: '/calendar',
+                    text: 'Agenda'
+                },
+                {
+                    route: '/calendar',
+                    text: 'Mi horario'
+                }
+            ]
         })
     }
 })
