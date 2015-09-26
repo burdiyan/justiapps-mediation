@@ -36,13 +36,33 @@ protectedRoutes.route('/calendar', {
                     text: 'Agenda'
                 },
                 {
-                    route: '/calendar',
+                    route: '/calendar/timetable',
                     text: 'Mi horario'
                 }
             ]
         })
     }
 })
+
+protectedRoutes.route('/calendar/timetable', {
+    action(params) {
+        ReactLayout.render(App, {
+            title: 'Calendario',
+            content: <CalendarTimetable />,
+            options: [
+                {
+                    route: '/calendar',
+                    text: 'Agenda'
+                },
+                {
+                    route: '/calendar/timetable',
+                    text: 'Mi horario'
+                }
+            ]
+        })
+    }
+})
+
 protectedRoutes.route('/cases', {
     action(params) {
         ReactLayout.render(App, {
@@ -120,7 +140,7 @@ FlowRouter.route('/about', {
 FlowRouter.route('/about/mediation', {
     action() {
         ReactLayout.render(App, {
-            title: 'Acerca de Medi',
+            title: 'Acerca de',
             content: <AboutMediation />,
             options: [
                 {

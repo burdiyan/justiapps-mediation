@@ -51,37 +51,58 @@ Meteor.startup(function() {
     // Mediators
     Accounts.createUser({
         username: 'mediator1',
-        email: 'mediator1@mediation.com',
+        email: 'ernesto.sanjuan@hmail.com',
         password: '123456',
+        phone: '+34 627 43 56 91',
         profile: {
             title: 'mediator',
-            firstName: 'Jose',
-            lastName: 'Pérez García',
-            association: 'Asociacion 1',
-            association_number: 'ASOC-123456',
-            specialization: ['Civil', 'Matrimonial', 'Consumidor'],
+            firstName: 'Ernesto',
+            lastName: 'San Juan',
+            association: 'AMEFA Granada',
+            association_number: '6523',
+            specialization: ['Mediación familiar'],
             address: {
-                city: 'Madrid',
+                city: 'Granada',
                 postalCode: '28001',
-                street: 'Calle Sagasta, 20'
+                street: 'C/ Gandía 3'
             }
         }
     })
     Accounts.createUser({
         username: 'mediator2',
-        email: 'mediator2@mediation.com',
+        email: 'miguel.garcia@hmail.com',
         password: '123456',
+        phone: '+34 611 12 13 14',
         profile: {
             title: 'mediator',
-            firstName: 'Fulanito',
-            lastName: 'de Tal',
-            association: 'Asociacion 2',
-            association_number: 'ASOC-1414',
-            specialization: ['Civil', 'Matrimonial', 'Consumidor'],
+            firstName: 'Miguel',
+            lastName: 'García',
+            association: 'AMEFA Granada',
+            association_number: '10723',
+            specialization: ['Mediación asuntos mercantiles'],
+            address: {
+                city: 'Granada',
+                postalCode: '28001',
+                street: 'C/ Sevilla, 25'
+            }
+        }
+    })
+    Accounts.createUser({
+        username: 'mediator3',
+        email: 'patricia.sanchez@hmail.com',
+        password: '123456',
+        phone: '+34 654 32 19 87',
+        profile: {
+            title: 'mediator',
+            firstName: 'Patricia',
+            lastName: 'Sánchez',
+            association: 'Asprima',
+            association_number: '15920',
+            specialization: ['Mediación familiar'],
             address: {
                 city: 'Madrid',
                 postalCode: '28001',
-                street: 'Calle Sagasta, 20'
+                street: 'Avenida de Burgos, 100'
             }
         }
     })
