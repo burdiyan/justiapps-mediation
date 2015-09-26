@@ -15656,44 +15656,47 @@ html, body {
       width: 75%;
       margin-left: 25%; } }
 
-.notification-container .notification {
-  padding: 15px;
-  color: #444444;
-  border: 1px solid #CCCCCC;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  -webkit-transition: .4s linear .1s;
-  -moz-transition: .4s linear .1s;
-  -o-transition: .4s linear .1s;
-  transition: .4s linear .1s; }
-  .notification-container .notification .notification-mark {
-    display: inline-block;
-    position: absolute;
-    height: 15px;
-    width: 15px;
+.notification-container {
+  padding: 0px 15px; }
+  .notification-container .notification {
+    padding: 15px;
+    color: #444444;
     border: 1px solid #CCCCCC;
-    border-radius: 8px;
-    margin-top: 2px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
     -webkit-transition: .4s linear .1s;
     -moz-transition: .4s linear .1s;
     -o-transition: .4s linear .1s;
     transition: .4s linear .1s; }
-  .notification-container .notification .notification-text {
-    display: inline-block;
-    margin-left: 30px;
-    -webkit-transition: .4s linear .1s;
-    -moz-transition: .4s linear .1s;
-    -o-transition: .4s linear .1s;
-    transition: .4s linear .1s; }
-  .notification-container .notification.unread {
-    background-color: #EBF5FB;
-    border: 2px solid #3498DB; }
-    .notification-container .notification.unread .notification-mark {
-      background-color: #3498DB;
-      border-color: #3498DB; }
-    .notification-container .notification.unread .notification-text {
-      color: #3498DB;
-      font-weight: 700; }
+    .notification-container .notification .notification-mark {
+      display: inline-block;
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      border: 1px solid #CCCCCC;
+      border-radius: 8px;
+      margin-top: 2px;
+      -webkit-transition: .4s linear .1s;
+      -moz-transition: .4s linear .1s;
+      -o-transition: .4s linear .1s;
+      transition: .4s linear .1s; }
+    .notification-container .notification .notification-text {
+      display: inline-block;
+      margin-left: 30px;
+      line-height: 20px;
+      -webkit-transition: .4s linear .1s;
+      -moz-transition: .4s linear .1s;
+      -o-transition: .4s linear .1s;
+      transition: .4s linear .1s; }
+    .notification-container .notification.unread {
+      background-color: #EBF5FB;
+      border: 2px solid #3498DB; }
+      .notification-container .notification.unread .notification-mark {
+        background-color: #3498DB;
+        border-color: #3498DB; }
+      .notification-container .notification.unread .notification-text {
+        color: #3498DB;
+        font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */

@@ -186,12 +186,13 @@ html, body{
 }
 
 .notification-container{
+  padding: 0px 15px;
   .notification{
     padding: 15px;
     color: $textDarkGray;
     border: 1px solid $lineGray;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     cursor: pointer;
     -webkit-transition: .4s linear .1s;
     -moz-transition: .4s linear .1s;
@@ -213,6 +214,7 @@ html, body{
     .notification-text{
       display: inline-block;
       margin-left: 30px;
+      line-height: 20px;
       -webkit-transition: .4s linear .1s;
       -moz-transition: .4s linear .1s;
       -o-transition: .4s linear .1s;
