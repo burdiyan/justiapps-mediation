@@ -1,1 +1,0 @@
-CalendarEvents = new Mongo.Collection('calendarEvents')

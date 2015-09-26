@@ -80,7 +80,7 @@ App = React.createClass({
                     icon="bi_user-single-a-group"
                     permissions={['admin', 'judge', 'customer']} />
           
-          <MenuItem name="Mis casos" 
+          <MenuItem name="Casos" 
                     route="/cases" 
                     icon="bi_user-contact-book"
                     permissions={['admin', 'judge', 'mediator', 'customer']} />

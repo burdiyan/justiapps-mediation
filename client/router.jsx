@@ -66,7 +66,7 @@ protectedRoutes.route('/calendar/timetable', {
 protectedRoutes.route('/cases', {
     action(params) {
         ReactLayout.render(App, {
-            title: 'Mis casos',
+            title: 'Casos y procedimientos',
             content: <Cases />,
             options: []
         })
