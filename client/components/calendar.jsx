@@ -1,7 +1,10 @@
 Calendar = React.createClass({
+  componentDidMount() {
+    $('#full-calendar').fullCalendar()
+  },
   render() {
     return (
-      <p> lorem ipsum calendar </p>
+        <div id="full-calendar"></div>
     )
   }
 })  
