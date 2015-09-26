@@ -1,4 +1,25 @@
 App = React.createClass({
+  // CHAPUZA MODE ON
+  openCalendar() {
+    FlowRouter.go('/calendar')
+  },
+  openMediators() {
+    FlowRouter.go('/mediators')
+  },
+  openCases() {
+    FlowRouter.go('/cases')
+  },
+  openNotifications() {
+    FlowRouter.go('/notifications')
+  },
+  openAbout() {
+    FlowRouter.go('/about')
+  },
+  openProfile() {
+    FlowRouter.go('/profile')
+  },
+  // CHAPUZA MODE OFF
+
   render() {
     return (
       <div className="container-fluid" id="main-container">
@@ -11,7 +32,8 @@ App = React.createClass({
               <div id="branding-icon"></div>
             </div>
           </div>
-          <div className="menu-item">
+
+          <div className="menu-item" onClick={this.openCalendar}>
             <div className="menu-icon">
               <i className="bi_time-calendar-a"></i>
             </div>
@@ -22,7 +44,8 @@ App = React.createClass({
               <i className="bi_interface-right"></i>
             </div>
           </div>
-          <div className="menu-item">
+
+          <div className="menu-item" onClick={this.openMediators}>
             <div className="menu-icon">
               <i className="bi_user-single-a-group"></i>
             </div>
@@ -33,7 +56,8 @@ App = React.createClass({
               <i className="bi_interface-right"></i>
             </div>
           </div>
-          <div className="menu-item">
+
+          <div className="menu-item" onClick={this.openCases}>
             <div className="menu-icon">
               <i className="bi_user-contact-book"></i>
             </div>
@@ -44,7 +68,8 @@ App = React.createClass({
               <i className="bi_interface-right"></i>
             </div>
           </div>
-          <div className="menu-item">
+
+          <div className="menu-item" onClick={this.openNotifications}>
             <div className="menu-icon">
               <i className="bi_setting-notification"></i>
             </div>
@@ -55,7 +80,8 @@ App = React.createClass({
               <i className="bi_interface-right"></i>
             </div>
           </div>
-          <div className="menu-item line-bottom">
+
+          <div className="menu-item line-bottom" onClick={this.openAbout}>
             <div className="menu-icon">
               <i className="bi_doc-file-line-a"></i>
             </div>
@@ -66,7 +92,8 @@ App = React.createClass({
               <i className="bi_interface-right"></i>
             </div>
           </div>
-          <div className="menu-item menu-bottom">
+
+          <div className="menu-item menu-bottom" onClick={this.openProfile}>
             <div className="menu-icon">
               <i className="bi_setting-gear-a"></i>
             </div>
@@ -78,6 +105,7 @@ App = React.createClass({
             </div>
           </div>
         </div>
+
         <div id="panel-main">
           <div id="hamburger-menu-button">
             <i className="bi_interface-hamburger"></i>
