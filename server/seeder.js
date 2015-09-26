@@ -139,9 +139,25 @@ Meteor.startup(function() {
         }
     })
 
+    // Calendar Events
     CalendarEvents.insert({
-        title: 'Sesión con el cliente 1',
+        title: 'Sesión con el cliente 2',
         start: '2015-09-26T16:15:40Z',
         end: '2015-09-26T18:15:40Z'
+    })
+    CalendarEvents.insert({
+        title: 'Sesión con el cliente 1',
+        start: '2015-09-26T12:30:40Z',
+        end: '2015-09-26T13:30:40Z'
+    })
+    CalendarEvents.insert({
+        title: 'Cita con el Juez',
+        start: '2015-09-27T12:15:40Z',
+        end: '2015-09-27T18:15:40Z'
+    })
+    CalendarEvents.insert({
+        title: 'Sesión con mediador',
+        start: '2015-09-24T15:00:40Z',
+        end: '2015-09-24T18:00:40Z'
     })
 })
