@@ -3,6 +3,7 @@ Meteor.startup(function() {
     Meteor.users.remove({})
     CalendarEvents.remove({})
     Notifications.remove({})
+    Cases.remove({})
     // Admin
     Accounts.createUser({
         username: 'burdiyan@gmail.com',
