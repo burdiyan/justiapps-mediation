@@ -67,20 +67,19 @@ protectedRoutes.route('/cases', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Casos y procedimientos',
-            content: <CasesList />,
-            options: [
-                {
-                    route: '/cases',
-                    text: 'Casos'
-                },
-                {
-                    route: '/cases',
-                    text: 'Procedimientos'
-                }
-            ]
+            content: <CasesList />
         })
     }
 })
+protectedRoutes.route('/cases/new', {
+    action(params) {
+        ReactLayout.render(App, {
+            title: 'Añadir caso',
+            content: <CaseForm />
+        })
+    }
+})
+
 protectedRoutes.route('/notifications', {
     action(params) {
         ReactLayout.render(App, {
