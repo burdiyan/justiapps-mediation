@@ -23,13 +23,13 @@ Meteor.startup(function() {
         password: '123456',
         profile: {
             title: 'judge',
-            firstName: 'Sergio',
-            lastName: 'Garcia',
+            firstName: 'Raimunda',
+            lastName: 'de Peñafort',
             tribunal: 'Juzgado 1',
             address: {
                 city: 'Madrid',
                 postalCode: '28000',
-                street: 'Calle Bailen, 45'
+                street: 'Calle Bailén, 45'
             }
         }
     })
@@ -211,8 +211,8 @@ Meteor.startup(function() {
     })
     Notifications.insert({
         text: 'El Juzgado de 1ª Instancia nº 2 de Granada ha enviado notificación al mediador Ernesto San Juan para CONCERTAR CITA INFORMATIVA DE MEDIACIÓN, acordada en el Procedimiento de Separación de Mutuo Acuerdo 515/2015 de Carmen Pérez García y Jordi Andreu Prat.',
-        forUser: 'judge1',
-        read: true
+        forUser: 'catalan',
+        read: false
     })
 
     // Cases
