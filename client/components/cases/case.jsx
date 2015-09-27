@@ -55,6 +55,10 @@ Case = React.createClass({
           {this.state.judge.profile.firstName} {this.state.judge.profile.lastName}
         </div>
         
+        <div className="case-date">
+          {this.props.item.open ? <Label text="Abierto" mod="label-success" /> : <Label text="Cerrado" mod="label-error" />}
+        </div>
+
         <div className="case-mediator">
           <i className="bi_media-glass-a"></i>
           {this.state.mediator.profile.firstName} {this.state.mediator.profile.lastName}
