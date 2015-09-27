@@ -15844,7 +15844,36 @@ html, body {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+  .calendar-container .fc-toolbar .fc-right button {
+    outline: none;
+    height: 30px;
+    background: #FFFFFF;
+    color: #444444;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 15px;
+    box-shadow: none; }
+    .calendar-container .fc-toolbar .fc-right button:hover, .calendar-container .fc-toolbar .fc-right button:active {
+      background: #3498DB;
+      color: #FFFFFF; }
+  @media (max-width: 767px) {
+    .calendar-container .fc-toolbar .fc-right {
+      float: left;
+      margin-top: 10px; } }
+.calendar-container .fc-day-grid-event {
+  border: none;
+  border-radius: 5px;
+  background-color: #3498DB;
+  cursor: pointer; }
+  .calendar-container .fc-day-grid-event:hover {
+    background-color: #154360; }
+  .calendar-container .fc-day-grid-event .fc-content {
+    font-size: 14px;
+    padding: 5px; }
+.calendar-container .fc-today {
+  background-color: #EBF5FB !important; }
 
 .warning {
   color: #A93226; }

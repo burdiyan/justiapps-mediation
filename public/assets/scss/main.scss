@@ -420,6 +420,46 @@ html, body{
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 15px;
+    .fc-right{
+      button{
+        outline: none;
+        height: 30px;
+        background: $bgWhite;
+        color: $textDarkGray;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 5px 15px;
+        box-shadow: none;
+        &:hover, &:active{
+          background: $branding;
+          color: $textWhite;
+        }
+      }
+    }
+    @media(max-width: 767px){
+      .fc-right{
+        float: left;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .fc-day-grid-event{
+    border: none;
+    border-radius: 5px;
+    background-color: $branding;
+    cursor: pointer;
+    &:hover{
+      background-color: $brandingDark;
+    }
+    .fc-content{
+      font-size: 14px;
+      padding: 5px;
+    }
+  }
+  .fc-today{
+    background-color: $brandingLight !important;
   }
 }
 
