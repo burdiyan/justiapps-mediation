@@ -9,7 +9,8 @@ CaseForm = React.createClass({
             customers: [],
             specialization: 'Mediación familiar', 
             date: new Date(),
-            description: ''
+            description: '',
+            open: true
         }
     },
     getMeteorData() {
