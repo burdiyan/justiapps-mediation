@@ -2,7 +2,7 @@ CaseForm = React.createClass({
     mixins: [React.addons.LinkedStateMixin],
     getInitialState() {
         return {
-            caseTitle: '', caseNumber: '',
+            title: '', caseNumber: '',
             mediator: '', judge: '', customers: [],
             specialization: '', date: new Date(),
             description: ''
@@ -14,7 +14,7 @@ CaseForm = React.createClass({
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <input type="text" valueLink={this.linkState('caseTitle')} />
+                <input type="text" valueLink={this.linkState('title')} />
             </form>
         )
     }
