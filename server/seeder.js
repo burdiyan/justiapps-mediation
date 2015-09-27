@@ -1,9 +1,9 @@
 Meteor.startup(function() {
     // Seed Database
+    Cases.remove({})
     Meteor.users.remove({})
     CalendarEvents.remove({})
     Notifications.remove({})
-    Cases.remove({})
     // Admin
     Accounts.createUser({
         username: 'burdiyan@gmail.com',
