@@ -67,7 +67,17 @@ protectedRoutes.route('/cases', {
     action(params) {
         ReactLayout.render(App, {
             title: 'Casos y procedimientos',
-            content: <CasesList />
+            content: <CasesList />,
+            options: [
+                {
+                    route: '/cases',
+                    text: 'Casos'
+                },
+                {
+                    route: '/cases',
+                    text: 'Procedimientos'
+                }
+            ]
         })
     }
 })
