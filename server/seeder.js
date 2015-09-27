@@ -212,11 +212,11 @@ Meteor.startup(function() {
 
     // Cases
     Cases.insert({
-        title: 'Foobar',
-        mediator: '',
+        title: 'Divorcio de Guillem y Mariana',
+        mediator: 'mediator1',
         judge: 'judge1',
         open: true,
-        parties: [],
+        customers: ['catalan', 'andaluza'],
         description: ''
     })
 })

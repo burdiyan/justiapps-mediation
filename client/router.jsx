@@ -121,7 +121,7 @@ protectedRoutes.route('/notifications/unread', {
 FlowRouter.route('/', {
     action(params) {
         ReactLayout.render(App, {
-            title: 'Bienvenid@',
+            title: 'Justicia Digital',
             content: <Welcome />
         })
     }
