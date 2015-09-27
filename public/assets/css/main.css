@@ -15891,4 +15891,25 @@ html, body {
     color: #27AE60;
     text-decoration: none; }
 
+.case-form input, .case-form select, .case-form span, .case-form button, .case-form textarea {
+  display: block;
+  width: 100%; }
+.case-form input, .case-form select, .case-form textarea {
+  margin-bottom: 15px; }
+.case-form input[type="text"] {
+  margin-top: 0px; }
+.case-form .case-form-label {
+  font-weight: 700;
+  margin-bottom: 10px; }
+.case-form input, .case-form select, .case-form button, .case-form textarea {
+  -webkit-appearance: none;
+  outline: none;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px; }
+.case-form select {
+  height: 32px;
+  padding: 1px 1px 1px 15px; }
+.case-form textarea {
+  padding: 5px 15px; }
+
 /*# sourceMappingURL=main.css.map */

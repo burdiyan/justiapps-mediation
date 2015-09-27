@@ -33,24 +33,31 @@ CaseForm = React.createClass({
     },
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <input type="text" valueLink={this.linkState('title')} />
-                <input type="text" valueLink={this.linkState('caseNumber')} />
+            <div className="container-content-small">
+            <form className="case-form" onSubmit={this.handleSubmit}>
+                <span className="case-form-label"> Título </span>
+                <input type="text" placeholder="Título" valueLink={this.linkState('title')} />
+                <span className="case-form-label"> Número de caso </span>
+                <input type="text" placeholder="Número de caso" valueLink={this.linkState('caseNumber')} />
+                <span className="case-form-label"> Juez </span>
                 <select valueLink={this.linkState('judge')}>
                     {this.data.judges.map(this._renderOptions)}
                 </select>
+                <span className="case-form-label"> Mediador </span>
                 <select valueLink={this.linkState('mediator')}>
                     {this.data.mediators.map(this._renderOptions)}
                 </select>
+                <span className="case-form-label"> Especialización </span>
                 <select valueLink={this.linkState('specialization')}>
                     <option value="Mediación familiar">Mediación familiar</option>
                     <option value="Mediación penal">Mediación penal</option>
                     <option value="Mediación de consumidor">Mediación de consumidor</option>
                     <option value="Mediación de laboral">Mediación laboral</option>
                 </select>
-                <textarea valueLink={this.linkState('description')} />
+                <textarea placeholder="Descripción" valueLink={this.linkState('description')} />
                 <button type="submit">Crear caso</button>
             </form>
+            </div>
         )
     }
 })  
