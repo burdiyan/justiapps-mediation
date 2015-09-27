@@ -217,7 +217,7 @@ Meteor.startup(function() {
 
     // Cases
     Cases.insert({
-        title: 'Divorcio de Guillem y Mariana',
+        title: 'Divorcio de Jordi y Carmen',
         caseNumber: 1342,
         mediator: 'mediator1',
         judge: 'judge1',
