@@ -19,12 +19,6 @@ CaseForm = React.createClass({
         event.preventDefault()
         Meteor.call('addCase', this.state)
     },
-    handleJudgeSelect(event) {
-        this.setState({judge: event.target.value})
-    },
-    handleMediatorSelect(event) {
-        this.setState({mediator: event.target.value})
-    },
     _renderOptions(user) {
         return <option value={`${user.username}`}>{user.profile.firstName} {user.profile.lastName}</option>
     },
@@ -33,10 +27,10 @@ CaseForm = React.createClass({
             <form onSubmit={this.handleSubmit}>
                 <input type="text" valueLink={this.linkState('title')} />
                 <input type="text" valueLink={this.linkState('caseNumber')} />
-                <select onChange={this.handleJudgeSelect}>
+                <select valueLink={this.linkState('judge')}>
                     {this.data.judges.map(this._renderOptions)}
                 </select>
-                <select onChange={this.handleMediatorSelect}>
+                <select valueLink={this.linkState('mediator')}>
                     {this.data.mediators.map(this._renderOptions)}
                 </select>
                 <button type="submit">Crear caso</button>
