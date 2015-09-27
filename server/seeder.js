@@ -116,8 +116,8 @@ Meteor.startup(function() {
         password: '123456',
         profile: {
             title: 'customer',
-            firstName: 'Guillem',
-            lastName: 'Llull',
+            firstName: 'Jordi',
+            lastName: 'Andreu Prat',
             address: {
                 city: 'Madrid',
                 postalCode: '28004',
@@ -131,8 +131,8 @@ Meteor.startup(function() {
         password: '123456',
         profile: {
             title: 'customer',
-            firstName: 'Mariana',
-            lastName: 'Garcia Pérez',
+            firstName: 'Carmen',
+            lastName: 'Pérez García',
             address: {
                 city: 'Madrid',
                 postalCode: '28000',
@@ -208,6 +208,11 @@ Meteor.startup(function() {
         text: 'El Juzgado de 1ª Instancia nº 2 de Madrid ha enviado notificación al mediador Rodrigo García COMUNICANDO FIN DEL PLAZO PARA CONCLUIR LA MEDIACIÓN Y SOLICITANDO INFORMACIÓN SOBRE SU RESULTADO.',
         forUser: 'mediator1',
         read: false    
+    })
+    Notifications.insert({
+        text: 'El Juzgado de 1ª Instancia nº 2 de Granada ha enviado notificación al mediador Ernesto San Juan para CONCERTAR CITA INFORMATIVA DE MEDIACIÓN, acordada en el Procedimiento de Separación de Mutuo Acuerdo 515/2015 de Carmen Pérez García y Jordi Andreu Prat.',
+        forUser: 'judge1',
+        read: true
     })
 
     // Cases
