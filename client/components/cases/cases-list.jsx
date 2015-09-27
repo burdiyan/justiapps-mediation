@@ -6,6 +6,9 @@ CasesList = React.createClass({
     let profileTitle = currentUser.profile.title
     let query = {}
     query[profileTitle] = currentUser.username
+    if (profileTitle == 'customer') {
+      query = { 'customers': {$in: [currentUser.username] } }
+    }
     return {
         cases: Cases.find(query).fetch()
     }
