@@ -15,6 +15,9 @@ CaseForm = React.createClass({
             customers: Meteor.users.find({'profile.title': 'customer'}).fetch()
         }
     },
+    componentDidMount() {
+        this.setState({judge: this.data.judges[0].username, mediator: this.data.mediators[0].username})
+    },
     handleSubmit(event) {
         event.preventDefault()
         Meteor.call('addCase', this.state)
@@ -33,6 +36,7 @@ CaseForm = React.createClass({
                 <select valueLink={this.linkState('mediator')}>
                     {this.data.mediators.map(this._renderOptions)}
                 </select>
+                <textarea valueLink={this.linkState('description')} />
                 <button type="submit">Crear caso</button>
             </form>
         )
