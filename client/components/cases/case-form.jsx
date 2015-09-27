@@ -2,9 +2,13 @@ CaseForm = React.createClass({
     mixins: [React.addons.LinkedStateMixin, ReactMeteorData],
     getInitialState() {
         return {
-            title: '', caseNumber: '',
-            mediator: '', judge: '', customers: [],
-            specialization: '', date: new Date(),
+            title: '', 
+            caseNumber: '',
+            mediator: '', 
+            judge: '', 
+            customers: [],
+            specialization: 'Mediación familiar', 
+            date: new Date(),
             description: ''
         }
     },
@@ -21,6 +25,7 @@ CaseForm = React.createClass({
     handleSubmit(event) {
         event.preventDefault()
         Meteor.call('addCase', this.state)
+        FlowRouter.go('/cases')
     },
     _renderOptions(user) {
         return <option value={`${user.username}`}>{user.profile.firstName} {user.profile.lastName}</option>
@@ -35,6 +40,12 @@ CaseForm = React.createClass({
                 </select>
                 <select valueLink={this.linkState('mediator')}>
                     {this.data.mediators.map(this._renderOptions)}
+                </select>
+                <select valueLink={this.linkState('specialization')}>
+                    <option value="Mediación familiar">Mediación familiar</option>
+                    <option value="Mediación penal">Mediación penal</option>
+                    <option value="Mediación de consumidor">Mediación de consumidor</option>
+                    <option value="Mediación de laboral">Mediación laboral</option>
                 </select>
                 <textarea valueLink={this.linkState('description')} />
                 <button type="submit">Crear caso</button>
