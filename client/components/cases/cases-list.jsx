@@ -24,7 +24,7 @@ CasesList = React.createClass({
     }
 
     return (
-      <div>
+      <div className="case-container container-content">
         {this.data.cases.map(this._renderCase)}
       </div>
     )

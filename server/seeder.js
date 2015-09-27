@@ -213,10 +213,16 @@ Meteor.startup(function() {
     // Cases
     Cases.insert({
         title: 'Divorcio de Guillem y Mariana',
+        caseNumber: 1342,
         mediator: 'mediator1',
         judge: 'judge1',
         open: true,
         customers: ['catalan', 'andaluza'],
-        description: ''
+        specialization: 'Mediación familiar',
+        date: new Date(),
+        description: `Carmen Pérez y Jordi Andreu llevan casados 7 años y tienen un hijo de 3 años. Actualmente viven en Granada pero a Jordi le ha salido un buen trabajo en una consultora en Barcelona y quiere aprovechar la oportunidad para volver a vivir en Barcelona, su ciudad natal.\n
+            Carmen no quiere irse con él, es maestra en Granada, tiene ahí a su familia y su gente, siempre ha vivido ahí y no quiere marcharse.\n
+            Jordi se marchó solo a trabajar a Barcelona hace 6 meses, y desde entonces la situación del matrimonio no hace más que empeorar. No ven salida al asunto,  se pelean por la custodia del niño, ya que sigue viviendo con su madre en Granada, y Jordi se lo quiere traer a Barcelona.\n
+            Después de mucha tensión y separación de facto, acuden al juez para divorciarse.`
     })
 })

@@ -45,8 +45,13 @@ LoginForm = React.createClass({
         </div>
         {this._renderErrors()}
         <form onSubmit={this.handleSubmit}>
-          <input type="text" name="username" placeholder="Username" onChange={this.setUsername} value={this.state.username}/>
-          <input type="password" name="password" placeholder="Password" onChange={this.setPassword} value={this.state.password}/>
+          <input type="text" name="username" 
+                 placeholder="Username" onChange={this.setUsername} 
+                 value={this.state.username} autoCapitalize="off" autoComplete="off" />
+          <input type="password" name="password" placeholder="Password" 
+                 onChange={this.setPassword} value={this.state.password} 
+                 autoCapitalize="off" autoComplete="off" />
+                 
           <button type="submit">Entrar</button>
         </form>
       </div>
