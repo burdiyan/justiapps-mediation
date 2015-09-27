@@ -24,8 +24,11 @@ CasesList = React.createClass({
     }
 
     return (
-      <div className="case-container container-content">
-        {this.data.cases.map(this._renderCase)}
+      <div className="container">
+        <button className="btn btn-primary">Añadir caso</button>
+        <div className="case-container container-content">
+          {this.data.cases.map(this._renderCase)}
+        </div>
       </div>
     )
   }

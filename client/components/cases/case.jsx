@@ -27,7 +27,7 @@ Case = React.createClass({
     return (
       <div className="case-item">
         <div className="case-customer">
-          {this.props.item.title}
+          {this.props.item.title} {this.props.item.open ? <Label text="Abierto" mod="label-success" /> : <Label text="Cerrado" mod="label-error" />}
         </div>
 
         <div className="case-number">
@@ -53,10 +53,6 @@ Case = React.createClass({
         <div className="case-date">
           <i className="bi_business-tie"></i>
           {this.state.judge.profile.firstName} {this.state.judge.profile.lastName}
-        </div>
-        
-        <div className="case-date">
-          {this.props.item.open ? <Label text="Abierto" mod="label-success" /> : <Label text="Cerrado" mod="label-error" />}
         </div>
 
         <div className="case-mediator">
