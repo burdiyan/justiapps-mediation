@@ -15831,6 +15831,8 @@ html, body {
     color: #154360;
     margin-bottom: 5px;
     font-weight: 700; }
+    .case-container .case-item .case-customer .label {
+      margin-left: 5px; }
   .case-container .case-item i {
     width: 30px;
     margin-right: 5px; }
@@ -15877,5 +15879,16 @@ html, body {
 
 .warning {
   color: #A93226; }
+
+.add-case-button {
+  font-size: 16px;
+  display: block;
+  height: 20px;
+  margin-bottom: 10px;
+  color: #27AE60;
+  text-decoration: none; }
+  .add-case-button:link, .add-case-button:hover, .add-case-button:active, .add-case-button:visited {
+    color: #27AE60;
+    text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
